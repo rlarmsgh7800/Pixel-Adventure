@@ -1,0 +1,915 @@
+.data_start
+
+    .export versionText
+    .export information
+    .export informationTMP
+    .export informationTMPU
+    .export pensParent
+    .export erasersParent
+
+    __refl_const_intnl_udonTypeID: %SystemInt64, null
+    __refl_const_intnl_udonTypeName: %SystemString, null
+    information: %UnityEngineUIText, null
+    versionText: %UnityEngineTextAsset, null
+    informationTMP: %TMProTextMeshPro, null
+    informationTMPU: %TMProTextMeshProUGUI, null
+    erasersParent: %UnityEngineTransform, null
+    pensParent: %UnityEngineTransform, null
+    logColor: %UnityEngineColor, null
+    eraserManagers: %UnityEngineComponentArray, null
+    penManagers: %UnityEngineComponentArray, null
+    _logPrefix: %SystemString, null
+    ColorEndTag: %SystemString, null
+    version: %SystemString, null
+    __0_this_intnl_QvPenUdonScriptQvPen_Settings: %VRCUdonUdonBehaviour, this
+    __1_mp_c_Color: %UnityEngineColor, null
+    __0_mp_c_Color: %UnityEngineColor, null
+    __2_mp_o_Object: %SystemObject, null
+    __1_mp_o_Object: %SystemObject, null
+    __0_mp_o_Object: %SystemObject, null
+    __0_infomationText_String: %SystemString, null
+    __0_const_intnl_QvPenUdonScriptQvPen_EraserManagerArray: %UnityEngineComponentArray, null
+    __0_const_intnl_QvPenUdonScriptQvPen_PenManagerArray: %UnityEngineComponentArray, null
+    __2_const_intnl_SystemInt32: %SystemInt32, null
+    __1_const_intnl_SystemInt32: %SystemInt32, null
+    __0_const_intnl_SystemInt32: %SystemInt32, null
+    __2_const_intnl_SystemInt64: %SystemInt64, null
+    __1_const_intnl_SystemInt64: %SystemInt64, null
+    __0_const_intnl_SystemInt64: %SystemInt64, null
+    __0_const_intnl_SystemObject: %SystemObject, null
+    __12_const_intnl_SystemString: %SystemString, null
+    __11_const_intnl_SystemString: %SystemString, null
+    __10_const_intnl_SystemString: %SystemString, null
+    __9_const_intnl_SystemString: %SystemString, null
+    __8_const_intnl_SystemString: %SystemString, null
+    __7_const_intnl_SystemString: %SystemString, null
+    __6_const_intnl_SystemString: %SystemString, null
+    __5_const_intnl_SystemString: %SystemString, null
+    __4_const_intnl_SystemString: %SystemString, null
+    __3_const_intnl_SystemString: %SystemString, null
+    __2_const_intnl_SystemString: %SystemString, null
+    __1_const_intnl_SystemString: %SystemString, null
+    __0_const_intnl_SystemString: %SystemString, null
+    __0_const_intnl_SystemType: %SystemType, null
+    __4_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __3_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __2_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __1_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __0_const_intnl_SystemUInt32: %SystemUInt32, null
+    __12_intnl_SystemBoolean: %SystemBoolean, null
+    __11_intnl_SystemBoolean: %SystemBoolean, null
+    __10_intnl_SystemBoolean: %SystemBoolean, null
+    __9_intnl_SystemBoolean: %SystemBoolean, null
+    __8_intnl_SystemBoolean: %SystemBoolean, null
+    __7_intnl_SystemBoolean: %SystemBoolean, null
+    __6_intnl_SystemBoolean: %SystemBoolean, null
+    __5_intnl_SystemBoolean: %SystemBoolean, null
+    __4_intnl_SystemBoolean: %SystemBoolean, null
+    __3_intnl_SystemBoolean: %SystemBoolean, null
+    __2_intnl_SystemBoolean: %SystemBoolean, null
+    __1_intnl_SystemBoolean: %SystemBoolean, null
+    __0_intnl_SystemBoolean: %SystemBoolean, null
+    __13_intnl_SystemBoolean: %SystemBoolean, null
+    __1_intnl_UnityEngineColor: %UnityEngineColor, null
+    __0_intnl_UnityEngineColor: %UnityEngineColor, null
+    __1_intnl_UnityEngineComponent: %UnityEngineComponent, null
+    __0_intnl_UnityEngineComponent: %UnityEngineComponent, null
+    __2_intnl_UnityEngineComponentArray: %UnityEngineComponentArray, null
+    __0_intnl_QvPenUdonScriptQvPen_EraserManagerArray: %UnityEngineComponentArray, null
+    __1_intnl_UnityEngineComponentArray: %UnityEngineComponentArray, null
+    __0_intnl_QvPenUdonScriptQvPen_PenManagerArray: %UnityEngineComponentArray, null
+    __0_intnl_UnityEngineComponentArray: %UnityEngineComponentArray, null
+    __10_intnl_SystemInt32: %SystemInt32, null
+    __9_intnl_SystemInt32: %SystemInt32, null
+    __8_intnl_SystemInt32: %SystemInt32, null
+    __7_intnl_SystemInt32: %SystemInt32, null
+    __6_intnl_SystemInt32: %SystemInt32, null
+    __5_intnl_SystemInt32: %SystemInt32, null
+    __4_intnl_SystemInt32: %SystemInt32, null
+    __3_intnl_SystemInt32: %SystemInt32, null
+    __2_intnl_SystemInt32: %SystemInt32, null
+    __1_intnl_SystemInt32: %SystemInt32, null
+    __0_intnl_SystemInt32: %SystemInt32, null
+    __3_intnl_SystemInt64: %SystemInt64, null
+    __2_intnl_SystemInt64: %SystemInt64, null
+    __1_intnl_SystemInt64: %SystemInt64, null
+    __0_intnl_SystemInt64: %SystemInt64, null
+    __1_intnl_SystemObject: %SystemObject, null
+    __0_intnl_SystemObject: %SystemObject, null
+    __3_intnl_SystemSingle: %SystemSingle, null
+    __2_intnl_SystemSingle: %SystemSingle, null
+    __1_intnl_SystemSingle: %SystemSingle, null
+    __0_intnl_SystemSingle: %SystemSingle, null
+    __28_intnl_SystemString: %SystemString, null
+    __27_intnl_SystemString: %SystemString, null
+    __26_intnl_SystemString: %SystemString, null
+    __25_intnl_SystemString: %SystemString, null
+    __24_intnl_SystemString: %SystemString, null
+    __7_intnl_interpolatedStr_String: %SystemString, null
+    __14_intnl_SystemString: %SystemString, null
+    __13_intnl_SystemString: %SystemString, null
+    __5_intnl_interpolatedStr_String: %SystemString, null
+    __12_intnl_SystemString: %SystemString, null
+    __11_intnl_SystemString: %SystemString, null
+    __10_intnl_SystemString: %SystemString, null
+    __4_intnl_interpolatedStr_String: %SystemString, null
+    __9_intnl_SystemString: %SystemString, null
+    __8_intnl_SystemString: %SystemString, null
+    __7_intnl_SystemString: %SystemString, null
+    __3_intnl_interpolatedStr_String: %SystemString, null
+    __6_intnl_SystemString: %SystemString, null
+    __5_intnl_SystemString: %SystemString, null
+    __4_intnl_SystemString: %SystemString, null
+    __2_intnl_interpolatedStr_String: %SystemString, null
+    __3_intnl_SystemString: %SystemString, null
+    __2_intnl_SystemString: %SystemString, null
+    __1_intnl_SystemString: %SystemString, null
+    __1_intnl_interpolatedStr_String: %SystemString, null
+    __0_intnl_interpolatedStr_String: %SystemString, null
+    __0_intnl_SystemString: %SystemString, null
+    __23_intnl_SystemString: %SystemString, null
+    __22_intnl_SystemString: %SystemString, null
+    __21_intnl_SystemString: %SystemString, null
+    __20_intnl_SystemString: %SystemString, null
+    __19_intnl_SystemString: %SystemString, null
+    __18_intnl_SystemString: %SystemString, null
+    __17_intnl_SystemString: %SystemString, null
+    __16_intnl_SystemString: %SystemString, null
+    __15_intnl_SystemString: %SystemString, null
+    __6_intnl_interpolatedStr_String: %SystemString, null
+    __2_intnl_returnValSymbol_String: %SystemString, null
+    __1_intnl_returnValSymbol_String: %SystemString, null
+    __0_intnl_returnValSymbol_String: %SystemString, null
+    __1_intnl_QvPenUdonScriptQvPen_EraserManager: %VRCUdonUdonBehaviour, null
+    __0_intnl_QvPenUdonScriptQvPen_EraserManager: %VRCUdonUdonBehaviour, null
+    __2_intnl_UnityEngineComponent: %UnityEngineComponent, null
+    __1_intnl_QvPenUdonScriptQvPen_PenManager: %VRCUdonUdonBehaviour, null
+    __0_intnl_QvPenUdonScriptQvPen_PenManager: %VRCUdonUdonBehaviour, null
+    __0_intnl_returnTarget_UInt32: %SystemUInt32, null
+
+.data_end
+
+        
+         #  using TMPro;
+        
+         #  using UdonSharp;
+        
+         #  using UnityEngine;
+        
+         #  using UnityEngine.UI;
+        
+         #  namespace QvPen.UdonScript
+        
+         #  [UdonBehaviourSyncMode(BehaviourSyncMode.NoVariableSync)]
+        
+         #  public class QvPen_Settings : UdonSharpBehaviour
+.code_start
+        
+         #  [System.NonSerialized]
+        
+         #  [SerializeField]
+        
+         #  [SerializeField]
+        
+         #  [SerializeField]
+        
+         #  [SerializeField]
+        
+         #  [SerializeField]
+        
+         #  [SerializeField]
+        
+         #  [System.NonSerialized]
+        
+         #  [System.NonSerialized]
+        
+         #  private void Start()
+    .export _start
+        
+    _start:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (versionText)
+        PUSH, versionText
+        PUSH, __0_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __0_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000060
+        
+         #  version = versionText.text.Trim();
+        PUSH, versionText
+        PUSH, __0_intnl_SystemString
+        EXTERN, "UnityEngineTextAsset.__get_text__SystemString"
+        PUSH, __0_intnl_SystemString
+        PUSH, version
+        EXTERN, "SystemString.__Trim__SystemString"
+        
+         #  var infomationText =
+        
+         #  $"<size=20></size>\n" +
+        PUSH, __1_const_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        
+         #  $"<size=14>{version}</size>";
+        PUSH, __2_const_intnl_SystemString
+        PUSH, __1_intnl_interpolatedStr_String
+        COPY
+        PUSH, __1_intnl_interpolatedStr_String
+        PUSH, version
+        PUSH, __1_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __1_intnl_SystemString
+        PUSH, __1_intnl_interpolatedStr_String
+        COPY
+        PUSH, __1_intnl_interpolatedStr_String
+        PUSH, __3_const_intnl_SystemString
+        PUSH, __2_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __2_intnl_SystemString
+        PUSH, __1_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_interpolatedStr_String
+        PUSH, __1_intnl_interpolatedStr_String
+        PUSH, __3_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __3_intnl_SystemString
+        PUSH, __0_infomationText_String
+        COPY
+        
+         #  if (information)
+        PUSH, information
+        PUSH, __1_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __1_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000164
+        
+         #  information.text = infomationText;
+        PUSH, information
+        PUSH, __0_infomationText_String
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        
+         #  if (informationTMP)
+        PUSH, informationTMP
+        PUSH, __2_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __2_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000001A4
+        
+         #  informationTMP.text = infomationText;
+        PUSH, informationTMP
+        PUSH, __0_infomationText_String
+        EXTERN, "TMProTextMeshPro.__set_text__SystemString__SystemVoid"
+        
+         #  if (informationTMPU)
+        PUSH, informationTMPU
+        PUSH, __3_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __3_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000001E4
+        
+         #  informationTMPU.text = infomationText;
+        PUSH, informationTMPU
+        PUSH, __0_infomationText_String
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        
+         #  if (pensParent)
+        PUSH, pensParent
+        PUSH, __4_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __4_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000690
+        
+         #  penManagers = pensParent.GetComponentsInChildren<QvPen_PenManager>();
+        PUSH, pensParent
+        PUSH, __0_const_intnl_SystemType
+        PUSH, __0_intnl_UnityEngineComponentArray
+        EXTERN, "UnityEngineComponent.__GetComponentsInChildren__SystemType__UnityEngineComponentArray"
+        PUSH, __0_const_intnl_QvPenUdonScriptQvPen_PenManagerArray
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_PenManagerArray
+        COPY
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __0_intnl_SystemInt32
+        COPY
+        PUSH, __0_intnl_UnityEngineComponentArray
+        PUSH, __1_intnl_SystemInt32
+        EXTERN, "UnityEngineComponentArray.__get_Length__SystemInt32"
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __2_intnl_SystemInt32
+        COPY
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __1_intnl_SystemInt32
+        PUSH, __5_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __5_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000041C
+        PUSH, __0_intnl_UnityEngineComponentArray
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __0_intnl_UnityEngineComponent
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __0_intnl_UnityEngineComponent
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_PenManager
+        COPY
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_PenManager
+        PUSH, __4_const_intnl_SystemString
+        PUSH, __0_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __0_intnl_SystemObject
+        PUSH, __0_const_intnl_SystemObject
+        PUSH, __6_intnl_SystemBoolean
+        EXTERN, "SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __6_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000368
+        PUSH, __0_intnl_SystemObject
+        PUSH, __1_intnl_SystemInt64
+        EXTERN, "SystemConvert.__ToInt64__SystemObject__SystemInt64"
+        PUSH, __1_intnl_SystemInt64
+        PUSH, __0_intnl_SystemInt64
+        COPY
+        JUMP, 0x0000037C
+        PUSH, __1_const_intnl_SystemInt64
+        PUSH, __0_intnl_SystemInt64
+        COPY
+        PUSH, __0_intnl_SystemInt64
+        PUSH, __0_const_intnl_SystemInt64
+        PUSH, __7_intnl_SystemBoolean
+        EXTERN, "SystemInt64.__op_Equality__SystemInt64_SystemInt64__SystemBoolean"
+        PUSH, __7_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000003E0
+        PUSH, __0_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __3_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __3_intnl_SystemInt32
+        PUSH, __0_intnl_SystemInt32
+        COPY
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __4_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __4_intnl_SystemInt32
+        PUSH, __2_intnl_SystemInt32
+        COPY
+        JUMP, 0x00000280
+        PUSH, __0_intnl_SystemInt32
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __8_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __8_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000067C
+        PUSH, __0_intnl_SystemInt32
+        PUSH, __1_intnl_UnityEngineComponentArray
+        EXTERN, "UnityEngineComponentArray.__ctor__SystemInt32__UnityEngineComponentArray"
+        PUSH, __1_intnl_UnityEngineComponentArray
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_PenManagerArray
+        COPY
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __2_intnl_SystemInt32
+        COPY
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __5_intnl_SystemInt32
+        COPY
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __1_intnl_SystemInt32
+        PUSH, __9_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __9_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000067C
+        PUSH, __0_intnl_UnityEngineComponentArray
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __1_intnl_UnityEngineComponent
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __1_intnl_UnityEngineComponent
+        PUSH, __1_intnl_QvPenUdonScriptQvPen_PenManager
+        COPY
+        PUSH, __1_intnl_QvPenUdonScriptQvPen_PenManager
+        PUSH, __4_const_intnl_SystemString
+        PUSH, __1_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __1_intnl_SystemObject
+        PUSH, __0_const_intnl_SystemObject
+        PUSH, __10_intnl_SystemBoolean
+        EXTERN, "SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __10_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000588
+        PUSH, __1_intnl_SystemObject
+        PUSH, __3_intnl_SystemInt64
+        EXTERN, "SystemConvert.__ToInt64__SystemObject__SystemInt64"
+        PUSH, __3_intnl_SystemInt64
+        PUSH, __2_intnl_SystemInt64
+        COPY
+        JUMP, 0x0000059C
+        PUSH, __1_const_intnl_SystemInt64
+        PUSH, __2_intnl_SystemInt64
+        COPY
+        PUSH, __2_intnl_SystemInt64
+        PUSH, __0_const_intnl_SystemInt64
+        PUSH, __11_intnl_SystemBoolean
+        EXTERN, "SystemInt64.__op_Equality__SystemInt64_SystemInt64__SystemBoolean"
+        PUSH, __11_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000640
+        PUSH, __0_intnl_UnityEngineComponentArray
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __2_intnl_UnityEngineComponent
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_PenManagerArray
+        PUSH, __5_intnl_SystemInt32
+        PUSH, __2_intnl_UnityEngineComponent
+        EXTERN, "SystemObjectArray.__Set__SystemInt32_SystemObject__SystemVoid"
+        PUSH, __5_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __6_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __6_intnl_SystemInt32
+        PUSH, __5_intnl_SystemInt32
+        COPY
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __7_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __7_intnl_SystemInt32
+        PUSH, __2_intnl_SystemInt32
+        COPY
+        JUMP, 0x000004A0
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_PenManagerArray
+        PUSH, penManagers
+        COPY
+        
+         #  if (erasersParent)
+        PUSH, erasersParent
+        PUSH, __5_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __5_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000B3C
+        
+         #  eraserManagers = erasersParent.GetComponentsInChildren<QvPen_EraserManager>();
+        PUSH, erasersParent
+        PUSH, __0_const_intnl_SystemType
+        PUSH, __1_intnl_UnityEngineComponentArray
+        EXTERN, "UnityEngineComponent.__GetComponentsInChildren__SystemType__UnityEngineComponentArray"
+        PUSH, __0_const_intnl_QvPenUdonScriptQvPen_EraserManagerArray
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_EraserManagerArray
+        COPY
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __0_intnl_SystemInt32
+        COPY
+        PUSH, __1_intnl_UnityEngineComponentArray
+        PUSH, __1_intnl_SystemInt32
+        EXTERN, "UnityEngineComponentArray.__get_Length__SystemInt32"
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __2_intnl_SystemInt32
+        COPY
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __1_intnl_SystemInt32
+        PUSH, __6_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __6_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000008C8
+        PUSH, __1_intnl_UnityEngineComponentArray
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __0_intnl_UnityEngineComponent
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __0_intnl_UnityEngineComponent
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_EraserManager
+        COPY
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_EraserManager
+        PUSH, __4_const_intnl_SystemString
+        PUSH, __0_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __0_intnl_SystemObject
+        PUSH, __0_const_intnl_SystemObject
+        PUSH, __7_intnl_SystemBoolean
+        EXTERN, "SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __7_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000814
+        PUSH, __0_intnl_SystemObject
+        PUSH, __1_intnl_SystemInt64
+        EXTERN, "SystemConvert.__ToInt64__SystemObject__SystemInt64"
+        PUSH, __1_intnl_SystemInt64
+        PUSH, __0_intnl_SystemInt64
+        COPY
+        JUMP, 0x00000828
+        PUSH, __1_const_intnl_SystemInt64
+        PUSH, __0_intnl_SystemInt64
+        COPY
+        PUSH, __0_intnl_SystemInt64
+        PUSH, __2_const_intnl_SystemInt64
+        PUSH, __8_intnl_SystemBoolean
+        EXTERN, "SystemInt64.__op_Equality__SystemInt64_SystemInt64__SystemBoolean"
+        PUSH, __8_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000088C
+        PUSH, __0_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __3_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __3_intnl_SystemInt32
+        PUSH, __0_intnl_SystemInt32
+        COPY
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __4_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __4_intnl_SystemInt32
+        PUSH, __2_intnl_SystemInt32
+        COPY
+        JUMP, 0x0000072C
+        PUSH, __0_intnl_SystemInt32
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __9_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __9_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000B28
+        PUSH, __0_intnl_SystemInt32
+        PUSH, __2_intnl_UnityEngineComponentArray
+        EXTERN, "UnityEngineComponentArray.__ctor__SystemInt32__UnityEngineComponentArray"
+        PUSH, __2_intnl_UnityEngineComponentArray
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_EraserManagerArray
+        COPY
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __2_intnl_SystemInt32
+        COPY
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __5_intnl_SystemInt32
+        COPY
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __1_intnl_SystemInt32
+        PUSH, __10_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __10_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000B28
+        PUSH, __1_intnl_UnityEngineComponentArray
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __1_intnl_UnityEngineComponent
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __1_intnl_UnityEngineComponent
+        PUSH, __1_intnl_QvPenUdonScriptQvPen_EraserManager
+        COPY
+        PUSH, __1_intnl_QvPenUdonScriptQvPen_EraserManager
+        PUSH, __4_const_intnl_SystemString
+        PUSH, __1_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __1_intnl_SystemObject
+        PUSH, __0_const_intnl_SystemObject
+        PUSH, __11_intnl_SystemBoolean
+        EXTERN, "SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __11_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000A34
+        PUSH, __1_intnl_SystemObject
+        PUSH, __3_intnl_SystemInt64
+        EXTERN, "SystemConvert.__ToInt64__SystemObject__SystemInt64"
+        PUSH, __3_intnl_SystemInt64
+        PUSH, __2_intnl_SystemInt64
+        COPY
+        JUMP, 0x00000A48
+        PUSH, __1_const_intnl_SystemInt64
+        PUSH, __2_intnl_SystemInt64
+        COPY
+        PUSH, __2_intnl_SystemInt64
+        PUSH, __2_const_intnl_SystemInt64
+        PUSH, __12_intnl_SystemBoolean
+        EXTERN, "SystemInt64.__op_Equality__SystemInt64_SystemInt64__SystemBoolean"
+        PUSH, __12_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000AEC
+        PUSH, __1_intnl_UnityEngineComponentArray
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __2_intnl_UnityEngineComponent
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_EraserManagerArray
+        PUSH, __5_intnl_SystemInt32
+        PUSH, __2_intnl_UnityEngineComponent
+        EXTERN, "SystemObjectArray.__Set__SystemInt32_SystemObject__SystemVoid"
+        PUSH, __5_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __6_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __6_intnl_SystemInt32
+        PUSH, __5_intnl_SystemInt32
+        COPY
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __7_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __7_intnl_SystemInt32
+        PUSH, __2_intnl_SystemInt32
+        COPY
+        JUMP, 0x0000094C
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_EraserManagerArray
+        PUSH, eraserManagers
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void Log(object o) => Debug.Log($"{logPrefix}{o}", this);
+    Log:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, __0_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000E50
+        PUSH, __2_intnl_returnValSymbol_String
+        PUSH, __4_intnl_SystemString
+        COPY
+        PUSH, __4_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_mp_o_Object
+        PUSH, __5_intnl_SystemString
+        EXTERN, "SystemObject.__ToString__SystemString"
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __5_intnl_SystemString
+        PUSH, __6_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __6_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_Settings
+        EXTERN, "UnityEngineDebug.__Log__SystemObject_UnityEngineObject__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void Warning(object o) => Debug.LogWarning($"{logPrefix}{o}", this);
+    Warning:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, __1_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000E50
+        PUSH, __2_intnl_returnValSymbol_String
+        PUSH, __7_intnl_SystemString
+        COPY
+        PUSH, __7_intnl_SystemString
+        PUSH, __3_intnl_interpolatedStr_String
+        COPY
+        PUSH, __1_mp_o_Object
+        PUSH, __8_intnl_SystemString
+        EXTERN, "SystemObject.__ToString__SystemString"
+        PUSH, __3_intnl_interpolatedStr_String
+        PUSH, __8_intnl_SystemString
+        PUSH, __9_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __9_intnl_SystemString
+        PUSH, __3_intnl_interpolatedStr_String
+        COPY
+        PUSH, __3_intnl_interpolatedStr_String
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_Settings
+        EXTERN, "UnityEngineDebug.__LogWarning__SystemObject_UnityEngineObject__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void Error(object o) => Debug.LogError($"{logPrefix}{o}", this);
+    Error:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, __2_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000E50
+        PUSH, __2_intnl_returnValSymbol_String
+        PUSH, __10_intnl_SystemString
+        COPY
+        PUSH, __10_intnl_SystemString
+        PUSH, __4_intnl_interpolatedStr_String
+        COPY
+        PUSH, __2_mp_o_Object
+        PUSH, __11_intnl_SystemString
+        EXTERN, "SystemObject.__ToString__SystemString"
+        PUSH, __4_intnl_interpolatedStr_String
+        PUSH, __11_intnl_SystemString
+        PUSH, __12_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __12_intnl_SystemString
+        PUSH, __4_intnl_interpolatedStr_String
+        COPY
+        PUSH, __4_intnl_interpolatedStr_String
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_Settings
+        EXTERN, "UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private readonly Color logColor = new Color(0xf2, 0x7d, 0x4a, 0xff) / 0xff;
+        
+         #  private string ColorBeginTag(Color c) => $"<color=\"#{ToHtmlStringRGB(c)}\">";
+    ColorBeginTag:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, __5_const_intnl_SystemString
+        PUSH, __5_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_mp_c_Color
+        PUSH, __1_mp_c_Color
+        COPY
+        PUSH, __3_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x000010D8
+        PUSH, __5_intnl_interpolatedStr_String
+        PUSH, __1_intnl_returnValSymbol_String
+        PUSH, __13_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __13_intnl_SystemString
+        PUSH, __5_intnl_interpolatedStr_String
+        COPY
+        PUSH, __5_intnl_interpolatedStr_String
+        PUSH, __6_const_intnl_SystemString
+        PUSH, __14_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __14_intnl_SystemString
+        PUSH, __5_intnl_interpolatedStr_String
+        COPY
+        PUSH, __5_intnl_interpolatedStr_String
+        PUSH, __0_intnl_returnValSymbol_String
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private const string ColorEndTag = "</color>";
+        
+         #  [FieldChangeCallback(nameof(logPrefix))]
+        
+         #  private string logPrefix
+    .export _get_logPrefix
+        
+    _get_logPrefix:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  => string.IsNullOrEmpty(_logPrefix)
+        PUSH, _logPrefix
+        PUSH, __13_intnl_SystemBoolean
+        EXTERN, "SystemString.__IsNullOrEmpty__SystemString__SystemBoolean"
+        PUSH, __13_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001094
+        
+         #  ? (_logPrefix = $"[{ColorBeginTag(logColor)}{nameof(QvPen)}.{nameof(QvPen.Udon)}.{nameof(QvPen_Settings)}{ColorEndTag}] ") : _logPrefix;
+        PUSH, __7_const_intnl_SystemString
+        PUSH, __6_intnl_interpolatedStr_String
+        COPY
+        PUSH, logColor
+        PUSH, __0_mp_c_Color
+        COPY
+        PUSH, logColor
+        PUSH, __0_intnl_UnityEngineColor
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, __4_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000D80
+        PUSH, __6_intnl_interpolatedStr_String
+        PUSH, __0_intnl_returnValSymbol_String
+        PUSH, __15_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __15_intnl_SystemString
+        PUSH, __6_intnl_interpolatedStr_String
+        COPY
+        PUSH, __6_intnl_interpolatedStr_String
+        PUSH, __8_const_intnl_SystemString
+        PUSH, __16_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __16_intnl_SystemString
+        PUSH, __6_intnl_interpolatedStr_String
+        COPY
+        PUSH, __6_intnl_interpolatedStr_String
+        PUSH, __9_const_intnl_SystemString
+        PUSH, __17_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __17_intnl_SystemString
+        PUSH, __6_intnl_interpolatedStr_String
+        COPY
+        PUSH, __6_intnl_interpolatedStr_String
+        PUSH, __10_const_intnl_SystemString
+        PUSH, __18_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __18_intnl_SystemString
+        PUSH, __6_intnl_interpolatedStr_String
+        COPY
+        PUSH, __6_intnl_interpolatedStr_String
+        PUSH, __9_const_intnl_SystemString
+        PUSH, __19_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __19_intnl_SystemString
+        PUSH, __6_intnl_interpolatedStr_String
+        COPY
+        PUSH, __6_intnl_interpolatedStr_String
+        PUSH, __refl_const_intnl_udonTypeName
+        PUSH, __20_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __20_intnl_SystemString
+        PUSH, __6_intnl_interpolatedStr_String
+        COPY
+        PUSH, __6_intnl_interpolatedStr_String
+        PUSH, ColorEndTag
+        PUSH, __21_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __21_intnl_SystemString
+        PUSH, __6_intnl_interpolatedStr_String
+        COPY
+        PUSH, __6_intnl_interpolatedStr_String
+        PUSH, __11_const_intnl_SystemString
+        PUSH, __22_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __22_intnl_SystemString
+        PUSH, __6_intnl_interpolatedStr_String
+        COPY
+        PUSH, __6_intnl_interpolatedStr_String
+        PUSH, _logPrefix
+        COPY
+        PUSH, _logPrefix
+        PUSH, __23_intnl_SystemString
+        COPY
+        JUMP, 0x000010A8
+        PUSH, _logPrefix
+        PUSH, __23_intnl_SystemString
+        COPY
+        PUSH, __23_intnl_SystemString
+        PUSH, __2_intnl_returnValSymbol_String
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Property epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private string ToHtmlStringRGB(Color c)
+    ToHtmlStringRGB:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  c *= 0xff;
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, __0_intnl_SystemSingle
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __1_mp_c_Color
+        PUSH, __0_intnl_SystemSingle
+        PUSH, __1_intnl_UnityEngineColor
+        EXTERN, "UnityEngineColor.__op_Multiply__UnityEngineColor_SystemSingle__UnityEngineColor"
+        PUSH, __1_intnl_UnityEngineColor
+        PUSH, __1_mp_c_Color
+        COPY
+        
+         #  return $"{Mathf.RoundToInt(c.r):x2}{Mathf.RoundToInt(c.g):x2}{Mathf.RoundToInt(c.b):x2}";
+        PUSH, __1_mp_c_Color
+        PUSH, __1_intnl_SystemSingle
+        EXTERN, "UnityEngineColor.__get_r__SystemSingle"
+        PUSH, __1_intnl_SystemSingle
+        PUSH, __8_intnl_SystemInt32
+        EXTERN, "UnityEngineMathf.__RoundToInt__SystemSingle__SystemInt32"
+        PUSH, __12_const_intnl_SystemString
+        PUSH, __8_intnl_SystemInt32
+        PUSH, __24_intnl_SystemString
+        EXTERN, "SystemString.__Format__SystemString_SystemObject__SystemString"
+        PUSH, __24_intnl_SystemString
+        PUSH, __7_intnl_interpolatedStr_String
+        COPY
+        PUSH, __1_mp_c_Color
+        PUSH, __2_intnl_SystemSingle
+        EXTERN, "UnityEngineColor.__get_g__SystemSingle"
+        PUSH, __2_intnl_SystemSingle
+        PUSH, __9_intnl_SystemInt32
+        EXTERN, "UnityEngineMathf.__RoundToInt__SystemSingle__SystemInt32"
+        PUSH, __12_const_intnl_SystemString
+        PUSH, __9_intnl_SystemInt32
+        PUSH, __25_intnl_SystemString
+        EXTERN, "SystemString.__Format__SystemString_SystemObject__SystemString"
+        PUSH, __7_intnl_interpolatedStr_String
+        PUSH, __25_intnl_SystemString
+        PUSH, __26_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __26_intnl_SystemString
+        PUSH, __7_intnl_interpolatedStr_String
+        COPY
+        PUSH, __1_mp_c_Color
+        PUSH, __3_intnl_SystemSingle
+        EXTERN, "UnityEngineColor.__get_b__SystemSingle"
+        PUSH, __3_intnl_SystemSingle
+        PUSH, __10_intnl_SystemInt32
+        EXTERN, "UnityEngineMathf.__RoundToInt__SystemSingle__SystemInt32"
+        PUSH, __12_const_intnl_SystemString
+        PUSH, __10_intnl_SystemInt32
+        PUSH, __27_intnl_SystemString
+        EXTERN, "SystemString.__Format__SystemString_SystemObject__SystemString"
+        PUSH, __7_intnl_interpolatedStr_String
+        PUSH, __27_intnl_SystemString
+        PUSH, __28_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __28_intnl_SystemString
+        PUSH, __7_intnl_interpolatedStr_String
+        COPY
+        PUSH, __7_intnl_interpolatedStr_String
+        PUSH, __1_intnl_returnValSymbol_String
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+.code_end

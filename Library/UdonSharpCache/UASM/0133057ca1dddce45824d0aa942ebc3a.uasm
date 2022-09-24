@@ -1,0 +1,932 @@
+.data_start
+
+    .export pen
+    .export colorGradient
+    .export inkWidth
+    .export inkMeshLayer
+    .export inkColliderLayer
+    .export pcInkMaterial
+    .export questInkMaterial
+    .export respawnButton
+    .export clearButton
+    .export inUseUI
+    .export textInUse
+    .export textInUseTMP
+    .export textInUseTMPU
+    .export _roundedTrailShader
+    .sync _syncedData, none
+
+    __refl_const_intnl_udonTypeID: %SystemInt64, null
+    __refl_const_intnl_udonTypeName: %SystemString, null
+    inUseUI: %UnityEngineGameObject, null
+    clearButton: %UnityEngineGameObject, null
+    respawnButton: %UnityEngineGameObject, null
+    colorGradient: %UnityEngineGradient, null
+    inkColliderLayer: %SystemInt32, null
+    inkMeshLayer: %SystemInt32, null
+    questInkMaterial: %UnityEngineMaterial, null
+    pcInkMaterial: %UnityEngineMaterial, null
+    _roundedTrailShader: %UnityEngineShader, null
+    inkWidth: %SystemSingle, null
+    textInUse: %UnityEngineUIText, null
+    textInUseTMP: %TMProTextMeshPro, null
+    textInUseTMPU: %TMProTextMeshProUGUI, null
+    pen: %VRCUdonUdonBehaviour, null
+    isInUseSyncBuffer: %SystemBoolean, null
+    onPostSerializationResult: %VRCUdonCommonSerializationResult, null
+    _old__syncedData: %UnityEngineVector3Array, null
+    _syncedData: %UnityEngineVector3Array, null
+    onPlayerLeftPlayer: %VRCSDKBaseVRCPlayerApi, null
+    onPlayerJoinedPlayer: %VRCSDKBaseVRCPlayerApi, null
+    __0_this_intnl_UnityEngineGameObject: %UnityEngineGameObject, this
+    __0_this_intnl_QvPenUdonScriptQvPen_PenManager: %VRCUdonUdonBehaviour, this
+    __1_mp_value_Boolean: %SystemBoolean, null
+    __0_mp_value_Boolean: %SystemBoolean, null
+    __1_mp_layer_Int32: %SystemInt32, null
+    __0_mp_layer_Int32: %SystemInt32, null
+    __0_mp_result_SerializationResult: %VRCUdonCommonSerializationResult, null
+    __0_mp_width_Single: %SystemSingle, null
+    __0_text_String: %SystemString, null
+    __0_mp_value_Vector3Array: %UnityEngineVector3Array, null
+    __0_mp_data_Vector3Array: %UnityEngineVector3Array, null
+    __0_owner_VRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __1_mp_player_VRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __0_mp_player_VRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __1_const_intnl_SystemBoolean: %SystemBoolean, null
+    __0_const_intnl_SystemBoolean: %SystemBoolean, null
+    __2_const_intnl_SystemInt32: %SystemInt32, null
+    __1_const_intnl_SystemInt32: %SystemInt32, null
+    __0_const_intnl_SystemInt32: %SystemInt32, null
+    __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget: %VRCUdonCommonInterfacesNetworkEventTarget, null
+    __0_const_intnl_SystemObject: %SystemObject, null
+    __17_const_intnl_SystemString: %SystemString, null
+    __16_const_intnl_SystemString: %SystemString, null
+    __15_const_intnl_SystemString: %SystemString, null
+    __14_const_intnl_SystemString: %SystemString, null
+    __13_const_intnl_SystemString: %SystemString, null
+    __12_const_intnl_SystemString: %SystemString, null
+    __11_const_intnl_SystemString: %SystemString, null
+    __10_const_intnl_SystemString: %SystemString, null
+    __9_const_intnl_SystemString: %SystemString, null
+    __8_const_intnl_SystemString: %SystemString, null
+    __7_const_intnl_SystemString: %SystemString, null
+    __6_const_intnl_SystemString: %SystemString, null
+    __5_const_intnl_SystemString: %SystemString, null
+    __4_const_intnl_SystemString: %SystemString, null
+    __3_const_intnl_SystemString: %SystemString, null
+    __2_const_intnl_SystemString: %SystemString, null
+    __1_const_intnl_SystemString: %SystemString, null
+    __0_const_intnl_SystemString: %SystemString, null
+    __4_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __3_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __2_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __1_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __0_const_intnl_SystemUInt32: %SystemUInt32, null
+    __0_const_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __29_intnl_SystemBoolean: %SystemBoolean, null
+    __28_intnl_SystemBoolean: %SystemBoolean, null
+    __27_intnl_SystemBoolean: %SystemBoolean, null
+    __26_intnl_SystemBoolean: %SystemBoolean, null
+    __25_intnl_SystemBoolean: %SystemBoolean, null
+    __24_intnl_SystemBoolean: %SystemBoolean, null
+    __23_intnl_SystemBoolean: %SystemBoolean, null
+    __22_intnl_SystemBoolean: %SystemBoolean, null
+    __21_intnl_SystemBoolean: %SystemBoolean, null
+    __20_intnl_SystemBoolean: %SystemBoolean, null
+    __19_intnl_SystemBoolean: %SystemBoolean, null
+    __18_intnl_SystemBoolean: %SystemBoolean, null
+    __17_intnl_SystemBoolean: %SystemBoolean, null
+    __16_intnl_SystemBoolean: %SystemBoolean, null
+    __15_intnl_SystemBoolean: %SystemBoolean, null
+    __14_intnl_SystemBoolean: %SystemBoolean, null
+    __13_intnl_SystemBoolean: %SystemBoolean, null
+    __12_intnl_SystemBoolean: %SystemBoolean, null
+    __11_intnl_SystemBoolean: %SystemBoolean, null
+    __10_intnl_SystemBoolean: %SystemBoolean, null
+    __9_intnl_SystemBoolean: %SystemBoolean, null
+    __8_intnl_SystemBoolean: %SystemBoolean, null
+    __7_intnl_SystemBoolean: %SystemBoolean, null
+    __6_intnl_SystemBoolean: %SystemBoolean, null
+    __5_intnl_SystemBoolean: %SystemBoolean, null
+    __4_intnl_SystemBoolean: %SystemBoolean, null
+    __3_intnl_SystemBoolean: %SystemBoolean, null
+    __2_intnl_SystemBoolean: %SystemBoolean, null
+    __1_intnl_SystemBoolean: %SystemBoolean, null
+    __0_intnl_SystemBoolean: %SystemBoolean, null
+    __0_intnl_returnValSymbol_Boolean: %SystemBoolean, null
+    __2_intnl_UnityEngineGameObject: %UnityEngineGameObject, null
+    __1_intnl_UnityEngineGameObject: %UnityEngineGameObject, null
+    __0_intnl_UnityEngineGameObject: %UnityEngineGameObject, null
+    __0_intnl_SystemInt32: %SystemInt32, null
+    __1_intnl_SystemObject: %SystemObject, null
+    __0_intnl_SystemObject: %SystemObject, null
+    __0_intnl_returnValSymbol_Shader: %UnityEngineShader, null
+    __2_intnl_SystemString: %SystemString, null
+    __1_intnl_SystemString: %SystemString, null
+    __0_intnl_SystemString: %SystemString, null
+    __0_intnl_returnTarget_UInt32: %SystemUInt32, null
+    __1_intnl_UnityEngineVector3Array: %UnityEngineVector3Array, null
+    __0_intnl_UnityEngineVector3Array: %UnityEngineVector3Array, null
+    __0_intnl_returnValSymbol_Vector3Array: %UnityEngineVector3Array, null
+    __1_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __0_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+
+.data_end
+
+        
+         #  using TMPro;
+        
+         #  using UdonSharp;
+        
+         #  using UnityEngine;
+        
+         #  using UnityEngine.UI;
+        
+         #  using VRC.SDKBase;
+        
+         #  using VRC.Udon.Common;
+        
+         #  using VRC.Udon.Common.Interfaces;
+        
+         #  namespace QvPen.UdonScript
+        
+         #  [DefaultExecutionOrder(20)]
+        
+         #  [UdonBehaviourSyncMode(BehaviourSyncMode.Manual)]
+        
+         #  public class QvPen_PenManager : UdonSharpBehaviour
+.code_start
+.update_order 20
+        
+         #  [SerializeField]
+        
+         #  public Gradient colorGradient = new Gradient();
+        
+         #  public float inkWidth = 0.005f;
+        
+         #  public int inkMeshLayer = 0;
+        
+         #  public int inkColliderLayer = 9;
+        
+         #  public Material pcInkMaterial;
+        
+         #  public Material questInkMaterial;
+        
+         #  [SerializeField]
+        
+         #  [SerializeField]
+        
+         #  [SerializeField]
+        
+         #  [SerializeField]
+        
+         #  [SerializeField]
+        
+         #  [SerializeField]
+        
+         #  [SerializeField]
+        
+         #  public Shader roundedTrailShader => _roundedTrailShader;
+    .export _get_roundedTrailShader
+        
+    _get_roundedTrailShader:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, _roundedTrailShader
+        PUSH, __0_intnl_returnValSymbol_Shader
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Property epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void Start() => pen._Init(this);
+    .export _start
+        
+    _start:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, pen
+        PUSH, __1_const_intnl_SystemString
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_PenManager
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, pen
+        PUSH, __2_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public override void OnPlayerJoined(VRCPlayerApi player)
+    .export _onPlayerJoined
+        
+    _onPlayerJoined:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, onPlayerJoinedPlayer
+        PUSH, __0_mp_player_VRCPlayerApi
+        COPY
+        
+         #  {
+        
+         #  if (!Networking.IsOwner(pen.gameObject))
+        PUSH, pen
+        PUSH, __0_intnl_UnityEngineGameObject
+        EXTERN, "UnityEngineComponent.__get_gameObject__UnityEngineGameObject"
+        PUSH, __0_intnl_UnityEngineGameObject
+        PUSH, __0_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseNetworking.__IsOwner__UnityEngineGameObject__SystemBoolean"
+        PUSH, __0_intnl_SystemBoolean
+        PUSH, __1_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __1_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000010C
+        
+         #  return;
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  if (pen.isHeld)
+        PUSH, pen
+        PUSH, __3_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, pen
+        PUSH, __4_const_intnl_SystemString
+        PUSH, __0_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __0_intnl_SystemObject
+        PUSH, __3_intnl_SystemBoolean
+        EXTERN, "SystemConvert.__ToBoolean__SystemObject__SystemBoolean"
+        PUSH, __3_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000018C
+        
+         #  SendCustomNetworkEvent(NetworkEventTarget.All, nameof(StartUsing));
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_PenManager
+        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget
+        PUSH, __5_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public override void OnPlayerLeft(VRCPlayerApi player)
+    .export _onPlayerLeft
+        
+    _onPlayerLeft:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, onPlayerLeftPlayer
+        PUSH, __1_mp_player_VRCPlayerApi
+        COPY
+        
+         #  {
+        
+         #  if (!Networking.IsOwner(pen.gameObject))
+        PUSH, pen
+        PUSH, __1_intnl_UnityEngineGameObject
+        EXTERN, "UnityEngineComponent.__get_gameObject__UnityEngineGameObject"
+        PUSH, __1_intnl_UnityEngineGameObject
+        PUSH, __4_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseNetworking.__IsOwner__UnityEngineGameObject__SystemBoolean"
+        PUSH, __4_intnl_SystemBoolean
+        PUSH, __5_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __5_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000228
+        
+         #  return;
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  if (!pen.isHeld)
+        PUSH, pen
+        PUSH, __3_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, pen
+        PUSH, __4_const_intnl_SystemString
+        PUSH, __1_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __1_intnl_SystemObject
+        PUSH, __7_intnl_SystemBoolean
+        EXTERN, "SystemConvert.__ToBoolean__SystemObject__SystemBoolean"
+        PUSH, __7_intnl_SystemBoolean
+        PUSH, __8_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __8_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000002C0
+        
+         #  SendCustomNetworkEvent(NetworkEventTarget.All, nameof(EndUsing));
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_PenManager
+        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget
+        PUSH, __6_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void StartUsing()
+    .export StartUsing
+        
+    StartUsing:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (respawnButton)
+        PUSH, respawnButton
+        PUSH, __9_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __9_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000031C
+        
+         #  respawnButton.SetActive(false);
+        PUSH, respawnButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  if (clearButton)
+        PUSH, clearButton
+        PUSH, __10_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __10_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000035C
+        
+         #  clearButton.SetActive(false);
+        PUSH, clearButton
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  if (inUseUI)
+        PUSH, inUseUI
+        PUSH, __11_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __11_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000039C
+        
+         #  inUseUI.SetActive(true);
+        PUSH, inUseUI
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  var owner = Networking.GetOwner(pen.gameObject);
+        PUSH, pen
+        PUSH, __2_intnl_UnityEngineGameObject
+        EXTERN, "UnityEngineComponent.__get_gameObject__UnityEngineGameObject"
+        PUSH, __2_intnl_UnityEngineGameObject
+        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi
+        EXTERN, "VRCSDKBaseNetworking.__GetOwner__UnityEngineGameObject__VRCSDKBaseVRCPlayerApi"
+        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __0_owner_VRCPlayerApi
+        COPY
+        
+         #  var text = owner != null ? owner.displayName : "Occupied";
+        PUSH, __0_owner_VRCPlayerApi
+        PUSH, __0_const_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __12_intnl_SystemBoolean
+        EXTERN, "SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __12_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000444
+        PUSH, __0_owner_VRCPlayerApi
+        PUSH, __1_intnl_SystemString
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__get_displayName__SystemString"
+        PUSH, __1_intnl_SystemString
+        PUSH, __0_intnl_SystemString
+        COPY
+        JUMP, 0x00000458
+        PUSH, __7_const_intnl_SystemString
+        PUSH, __0_intnl_SystemString
+        COPY
+        PUSH, __0_intnl_SystemString
+        PUSH, __0_text_String
+        COPY
+        
+         #  if (textInUse)
+        PUSH, textInUse
+        PUSH, __13_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __13_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000004AC
+        
+         #  textInUse.text = text;
+        PUSH, textInUse
+        PUSH, __0_text_String
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        
+         #  if (textInUseTMP)
+        PUSH, textInUseTMP
+        PUSH, __14_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __14_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000004EC
+        
+         #  textInUseTMP.text = text;
+        PUSH, textInUseTMP
+        PUSH, __0_text_String
+        EXTERN, "TMProTextMeshPro.__set_text__SystemString__SystemVoid"
+        
+         #  if (textInUseTMPU)
+        PUSH, textInUseTMPU
+        PUSH, __15_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __15_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000052C
+        
+         #  textInUseTMPU.text = text;
+        PUSH, textInUseTMPU
+        PUSH, __0_text_String
+        EXTERN, "TMProTextMeshProUGUI.__set_text__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void EndUsing()
+    .export EndUsing
+        
+    EndUsing:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (respawnButton)
+        PUSH, respawnButton
+        PUSH, __16_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __16_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000588
+        
+         #  respawnButton.SetActive(true);
+        PUSH, respawnButton
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  if (clearButton)
+        PUSH, clearButton
+        PUSH, __17_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __17_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000005C8
+        
+         #  clearButton.SetActive(true);
+        PUSH, clearButton
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  if (inUseUI)
+        PUSH, inUseUI
+        PUSH, __18_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __18_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000608
+        
+         #  inUseUI.SetActive(false);
+        PUSH, inUseUI
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineGameObject.__SetActive__SystemBoolean__SystemVoid"
+        
+         #  textInUse.text = string.Empty;
+        PUSH, __2_intnl_SystemString
+        EXTERN, "SystemString.__get_Empty__SystemString"
+        PUSH, textInUse
+        PUSH, __2_intnl_SystemString
+        EXTERN, "UnityEngineUIText.__set_text__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SetWidth(float width)
+    .export _SetWidth
+        
+    _SetWidth:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  inkWidth = width;
+        PUSH, __0_mp_width_Single
+        PUSH, inkWidth
+        COPY
+        
+         #  pen._UpdateInkData();
+        PUSH, pen
+        PUSH, __8_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SetMeshLayer(int layer)
+    .export _SetMeshLayer
+        
+    _SetMeshLayer:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  inkMeshLayer = layer;
+        PUSH, __0_mp_layer_Int32
+        PUSH, inkMeshLayer
+        COPY
+        
+         #  pen._UpdateInkData();
+        PUSH, pen
+        PUSH, __8_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SetColliderLayer(int layer)
+    .export _SetColliderLayer
+        
+    _SetColliderLayer:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  inkColliderLayer = layer;
+        PUSH, __1_mp_layer_Int32
+        PUSH, inkColliderLayer
+        COPY
+        
+         #  pen._UpdateInkData();
+        PUSH, pen
+        PUSH, __8_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SetUseDoubleClick(bool value) => pen._SetUseDoubleClick(value);
+    .export _SetUseDoubleClick
+        
+    _SetUseDoubleClick:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, pen
+        PUSH, __9_const_intnl_SystemString
+        PUSH, __0_mp_value_Boolean
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, pen
+        PUSH, __10_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SetEnabledSync(bool value) => pen._SetEnabledSync(value);
+    .export _SetEnabledSync
+        
+    _SetEnabledSync:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, pen
+        PUSH, __11_const_intnl_SystemString
+        PUSH, __1_mp_value_Boolean
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, pen
+        PUSH, __12_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void ResetPen()
+    .export ResetPen
+        
+    ResetPen:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  pen._Respawn();
+        PUSH, pen
+        PUSH, __13_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        
+         #  pen._Clear();
+        PUSH, pen
+        PUSH, __14_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void Respawn() => pen._Respawn();
+    .export Respawn
+        
+    Respawn:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, pen
+        PUSH, __13_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void Clear()
+    .export Clear
+        
+    Clear:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  _ClearSyncBuffer();
+        PUSH, __0_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000CB0
+        
+         #  pen._Clear();
+        PUSH, pen
+        PUSH, __14_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public bool _TakeOwnership()
+    .export _TakeOwnership
+        
+    _TakeOwnership:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (Networking.IsOwner(gameObject))
+        PUSH, __0_this_intnl_UnityEngineGameObject
+        PUSH, __19_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseNetworking.__IsOwner__UnityEngineGameObject__SystemBoolean"
+        PUSH, __19_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000008F8
+        
+         #  {
+        
+         #  _ClearSyncBuffer();
+        PUSH, __1_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000CB0
+        
+         #  return true;
+        PUSH, __1_const_intnl_SystemBoolean
+        PUSH, __0_intnl_returnValSymbol_Boolean
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        JUMP, 0x0000094C
+        
+         #  else
+        
+         #  {
+        
+         #  Networking.SetOwner(Networking.LocalPlayer, gameObject);
+        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __0_this_intnl_UnityEngineGameObject
+        EXTERN, "VRCSDKBaseNetworking.__SetOwner__VRCSDKBaseVRCPlayerApi_UnityEngineGameObject__SystemVoid"
+        
+         #  return Networking.IsOwner(gameObject);
+        PUSH, __0_this_intnl_UnityEngineGameObject
+        PUSH, __0_intnl_returnValSymbol_Boolean
+        EXTERN, "VRCSDKBaseNetworking.__IsOwner__UnityEngineGameObject__SystemBoolean"
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private bool isInUseSyncBuffer = false;
+        
+         #  [UdonSynced, System.NonSerialized, FieldChangeCallback(nameof(syncedData))]
+        
+         #  private Vector3[] syncedData {
+    _get_syncedData:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  get => _syncedData;
+        PUSH, _syncedData
+        PUSH, __0_intnl_returnValSymbol_Vector3Array
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Property epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+    .export _onVarChange__syncedData
+    _onVarChange__syncedData:
+        PUSH, _syncedData
+        PUSH, __0_mp_value_Vector3Array
+        COPY
+        PUSH, _old__syncedData
+        PUSH, _syncedData
+        COPY
+    _set_syncedData:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  set {
+        
+         #  _syncedData = value;
+        PUSH, __0_mp_value_Vector3Array
+        PUSH, _syncedData
+        COPY
+        
+         #  RequestSendPackage();
+        PUSH, __2_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000A4C
+        
+         #  pen._UnpackData(_syncedData);
+        PUSH, pen
+        PUSH, __15_const_intnl_SystemString
+        PUSH, _syncedData
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, _syncedData
+        PUSH, __0_intnl_UnityEngineVector3Array
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, pen
+        PUSH, __16_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Property epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void RequestSendPackage()
+    RequestSendPackage:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (VRCPlayerApi.GetPlayerCount() > 1 && Networking.IsOwner(gameObject) && !isInUseSyncBuffer)
+        PUSH, __0_intnl_SystemInt32
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__GetPlayerCount__SystemInt32"
+        PUSH, __0_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __22_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __22_intnl_SystemBoolean
+        PUSH, __21_intnl_SystemBoolean
+        COPY
+        PUSH, __21_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000AEC
+        PUSH, __0_this_intnl_UnityEngineGameObject
+        PUSH, __23_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseNetworking.__IsOwner__UnityEngineGameObject__SystemBoolean"
+        PUSH, __21_intnl_SystemBoolean
+        PUSH, __23_intnl_SystemBoolean
+        PUSH, __24_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __24_intnl_SystemBoolean
+        PUSH, __21_intnl_SystemBoolean
+        COPY
+        PUSH, __21_intnl_SystemBoolean
+        PUSH, __20_intnl_SystemBoolean
+        COPY
+        PUSH, __20_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000B5C
+        PUSH, isInUseSyncBuffer
+        PUSH, __25_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __20_intnl_SystemBoolean
+        PUSH, __25_intnl_SystemBoolean
+        PUSH, __26_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __26_intnl_SystemBoolean
+        PUSH, __20_intnl_SystemBoolean
+        COPY
+        PUSH, __20_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000B90
+        
+         #  {
+        
+         #  isInUseSyncBuffer = true;
+        PUSH, __1_const_intnl_SystemBoolean
+        PUSH, isInUseSyncBuffer
+        COPY
+        
+         #  RequestSerialization();
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_PenManager
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__RequestSerialization__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SendData(Vector3[] data)
+    .export _SendData
+        
+    _SendData:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (!isInUseSyncBuffer)
+        PUSH, isInUseSyncBuffer
+        PUSH, __27_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __27_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000BF8
+        
+         #  syncedData = data;
+        PUSH, __0_mp_data_Vector3Array
+        PUSH, __0_mp_value_Vector3Array
+        COPY
+        PUSH, __3_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x000009C0
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public override void OnPostSerialization(SerializationResult result)
+    .export _onPostSerialization
+        
+    _onPostSerialization:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, onPostSerializationResult
+        PUSH, __0_mp_result_SerializationResult
+        COPY
+        
+         #  {
+        
+         #  isInUseSyncBuffer = false;
+        PUSH, __0_const_intnl_SystemBoolean
+        PUSH, isInUseSyncBuffer
+        COPY
+        
+         #  if (!result.success)
+        PUSH, __0_mp_result_SerializationResult
+        PUSH, __28_intnl_SystemBoolean
+        EXTERN, "VRCUdonCommonSerializationResult.__get_success__SystemBoolean"
+        PUSH, __28_intnl_SystemBoolean
+        PUSH, __29_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __29_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000C94
+        
+         #  pen.DestroyJustBeforeInk();
+        PUSH, pen
+        PUSH, __17_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _ClearSyncBuffer()
+    .export _ClearSyncBuffer
+        
+    _ClearSyncBuffer:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  syncedData = new Vector3[] { };
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, __1_intnl_UnityEngineVector3Array
+        EXTERN, "UnityEngineVector3Array.__ctor__SystemInt32__UnityEngineVector3Array"
+        PUSH, __1_intnl_UnityEngineVector3Array
+        PUSH, __0_mp_value_Vector3Array
+        COPY
+        PUSH, __4_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x000009C0
+        
+         #  isInUseSyncBuffer = false;
+        PUSH, __0_const_intnl_SystemBoolean
+        PUSH, isInUseSyncBuffer
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+.code_end

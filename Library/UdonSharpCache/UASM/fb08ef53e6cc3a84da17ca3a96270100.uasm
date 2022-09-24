@@ -1,0 +1,482 @@
+.data_start
+
+    .export keypad
+    .export buttonValue
+    .export disableDebugging
+
+    __refl_const_intnl_udonTypeID: %SystemInt64, null
+    __refl_const_intnl_udonTypeName: %SystemString, null
+    disableDebugging: %SystemBoolean, null
+    buttonValue: %SystemString, null
+    keypad: %VRCUdonUdonBehaviour, null
+    _prefix: %SystemString, null
+    _buttonId: %SystemString, null
+    __0_this_intnl_UnityEngineGameObject: %UnityEngineGameObject, this
+    __0_obj_GameObject: %UnityEngineGameObject, null
+    __1_mp_value_String: %SystemString, null
+    __0_mp_value_String: %SystemString, null
+    __0_const_intnl_SystemBoolean: %SystemBoolean, null
+    __0_const_intnl_UnityEngineGameObject: %UnityEngineGameObject, null
+    __1_const_intnl_SystemInt32: %SystemInt32, null
+    __0_const_intnl_SystemInt32: %SystemInt32, null
+    __0_const_intnl_SystemObject: %SystemObject, null
+    __16_const_intnl_SystemString: %SystemString, null
+    __15_const_intnl_SystemString: %SystemString, null
+    __14_const_intnl_SystemString: %SystemString, null
+    __13_const_intnl_SystemString: %SystemString, null
+    __12_const_intnl_SystemString: %SystemString, null
+    __11_const_intnl_SystemString: %SystemString, null
+    __10_const_intnl_SystemString: %SystemString, null
+    __9_const_intnl_SystemString: %SystemString, null
+    __8_const_intnl_SystemString: %SystemString, null
+    __7_const_intnl_SystemString: %SystemString, null
+    __6_const_intnl_SystemString: %SystemString, null
+    __5_const_intnl_SystemString: %SystemString, null
+    __4_const_intnl_SystemString: %SystemString, null
+    __3_const_intnl_SystemString: %SystemString, null
+    __2_const_intnl_SystemString: %SystemString, null
+    __1_const_intnl_SystemString: %SystemString, null
+    __0_const_intnl_SystemString: %SystemString, null
+    __0_const_intnl_SystemType: %SystemType, null
+    __0_const_intnl_VRCUdonCommonInterfacesIUdonEventReceiver: %VRCUdonUdonBehaviour, null
+    __9_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __8_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __7_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __6_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __5_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __4_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __3_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __2_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __1_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __0_const_intnl_SystemUInt32: %SystemUInt32, null
+    __0_const_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __14_intnl_SystemBoolean: %SystemBoolean, null
+    __13_intnl_SystemBoolean: %SystemBoolean, null
+    __12_intnl_SystemBoolean: %SystemBoolean, null
+    __11_intnl_SystemBoolean: %SystemBoolean, null
+    __10_intnl_SystemBoolean: %SystemBoolean, null
+    __9_intnl_SystemBoolean: %SystemBoolean, null
+    __8_intnl_SystemBoolean: %SystemBoolean, null
+    __7_intnl_SystemBoolean: %SystemBoolean, null
+    __6_intnl_SystemBoolean: %SystemBoolean, null
+    __5_intnl_SystemBoolean: %SystemBoolean, null
+    __4_intnl_SystemBoolean: %SystemBoolean, null
+    __3_intnl_SystemBoolean: %SystemBoolean, null
+    __2_intnl_SystemBoolean: %SystemBoolean, null
+    __1_intnl_SystemBoolean: %SystemBoolean, null
+    __0_intnl_SystemBoolean: %SystemBoolean, null
+    __0_intnl_UnityEngineComponent: %UnityEngineComponent, null
+    __0_intnl_UnityEngineGameObject: %UnityEngineGameObject, null
+    __0_intnl_SystemInt32: %SystemInt32, null
+    __0_intnl_SystemSingle: %SystemSingle, null
+    __8_intnl_SystemString: %SystemString, null
+    __7_intnl_SystemString: %SystemString, null
+    __6_intnl_SystemString: %SystemString, null
+    __5_intnl_SystemString: %SystemString, null
+    __4_intnl_SystemString: %SystemString, null
+    __3_intnl_SystemString: %SystemString, null
+    __2_intnl_SystemString: %SystemString, null
+    __1_intnl_SystemString: %SystemString, null
+    __0_intnl_SystemString: %SystemString, null
+    __0_intnl_returnTarget_UInt32: %SystemUInt32, null
+    __1_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __0_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+
+.data_end
+
+        
+         #  using UdonSharp;
+        
+         #  using UnityEngine;
+        
+         #  using VRC.SDKBase;
+        
+         #  using VRC.Udon;
+        
+         #  public class KeypadButton : UdonSharpBehaviour
+.code_start
+        
+         #  public Keypad keypad = null;
+        
+         #  public string buttonValue = null;
+        
+         #  public bool disableDebugging = false;
+        
+         #  private string _buttonId;
+        
+         #  private string _prefix;
+        
+         #  private void Log(string value)
+    Log:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (disableDebugging != true)
+        PUSH, disableDebugging
+        PUSH, __0_const_intnl_SystemBoolean
+        PUSH, __0_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_Inequality__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __0_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000068
+        
+         #  {
+        
+         #  Debug.Log(_prefix + value);
+        PUSH, _prefix
+        PUSH, __0_mp_value_String
+        PUSH, __0_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __0_intnl_SystemString
+        EXTERN, "UnityEngineDebug.__Log__SystemObject__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void LogError(string value)
+    LogError:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (disableDebugging != true)
+        PUSH, disableDebugging
+        PUSH, __0_const_intnl_SystemBoolean
+        PUSH, __1_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_Inequality__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __1_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000000E4
+        
+         #  {
+        
+         #  Debug.LogError(_prefix + value);
+        PUSH, _prefix
+        PUSH, __1_mp_value_String
+        PUSH, __1_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __1_intnl_SystemString
+        EXTERN, "UnityEngineDebug.__LogError__SystemObject__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void Die()
+    Die:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  ((string) null).ToString();
+        PUSH, __0_const_intnl_SystemObject
+        PUSH, __2_intnl_SystemString
+        COPY
+        PUSH, __2_intnl_SystemString
+        PUSH, __3_intnl_SystemString
+        EXTERN, "SystemString.__ToString__SystemString"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void Start()
+    .export _start
+        
+    _start:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  _buttonId = Random.value.ToString();
+        PUSH, __0_intnl_SystemSingle
+        EXTERN, "UnityEngineRandom.__get_value__SystemSingle"
+        PUSH, __0_intnl_SystemSingle
+        PUSH, _buttonId
+        EXTERN, "SystemSingle.__ToString__SystemString"
+        
+         #  _prefix = "[UdonKeypad] [b-" + _buttonId + "] ";
+        PUSH, __0_const_intnl_SystemString
+        PUSH, _buttonId
+        PUSH, __4_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __4_intnl_SystemString
+        PUSH, __1_const_intnl_SystemString
+        PUSH, _prefix
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        
+         #  Log("Loading button... Value: " + buttonValue);
+        PUSH, __2_const_intnl_SystemString
+        PUSH, buttonValue
+        PUSH, __0_mp_value_String
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __0_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000008
+        
+         #  if (keypad == null)
+        PUSH, keypad
+        PUSH, __0_const_intnl_VRCUdonCommonInterfacesIUdonEventReceiver
+        PUSH, __2_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __2_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000300
+        
+         #  {
+        
+         #  LogError("Keypad is not set! Trying to dynamically find object...");
+        PUSH, __3_const_intnl_SystemString
+        PUSH, __1_mp_value_String
+        COPY
+        PUSH, __1_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000084
+        
+         #  var obj = GameObject.Find("Keypad");
+        PUSH, __4_const_intnl_SystemString
+        PUSH, __0_intnl_UnityEngineGameObject
+        EXTERN, "UnityEngineGameObject.__Find__SystemString__UnityEngineGameObject"
+        PUSH, __0_intnl_UnityEngineGameObject
+        PUSH, __0_obj_GameObject
+        COPY
+        
+         #  if (obj != null)
+        PUSH, __0_obj_GameObject
+        PUSH, __0_const_intnl_UnityEngineGameObject
+        PUSH, __3_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Inequality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __3_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000002CC
+        
+         #  {
+        
+         #  keypad = (Keypad) obj.GetComponent(typeof(UdonBehaviour));
+        PUSH, __0_obj_GameObject
+        PUSH, __0_const_intnl_SystemType
+        PUSH, __0_intnl_UnityEngineComponent
+        EXTERN, "UnityEngineGameObject.__GetComponent__SystemType__UnityEngineComponent"
+        PUSH, __0_intnl_UnityEngineComponent
+        PUSH, keypad
+        COPY
+        JUMP, 0x00000300
+        
+         #  else
+        
+         #  {
+        
+         #  LogError("Keypad is not set and could not dynamically find parent! Dying...");
+        PUSH, __5_const_intnl_SystemString
+        PUSH, __1_mp_value_String
+        COPY
+        PUSH, __2_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000084
+        
+         #  Die();
+        PUSH, __3_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000100
+        
+         #  if (buttonValue == null)
+        PUSH, buttonValue
+        PUSH, __6_const_intnl_SystemString
+        PUSH, __3_intnl_SystemBoolean
+        EXTERN, "SystemString.__op_Equality__SystemString_SystemString__SystemBoolean"
+        PUSH, __3_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000003D0
+        
+         #  {
+        
+         #  LogError("Keypad is not set! Resetting to calculated value: " + gameObject.name.Substring(12));
+        PUSH, __0_this_intnl_UnityEngineGameObject
+        PUSH, __5_intnl_SystemString
+        EXTERN, "UnityEngineGameObject.__get_name__SystemString"
+        PUSH, __5_intnl_SystemString
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, __6_intnl_SystemString
+        EXTERN, "SystemString.__Substring__SystemInt32__SystemString"
+        PUSH, __7_const_intnl_SystemString
+        PUSH, __6_intnl_SystemString
+        PUSH, __1_mp_value_String
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __4_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000084
+        
+         #  buttonValue = gameObject.name.Substring(12);
+        PUSH, __0_this_intnl_UnityEngineGameObject
+        PUSH, __7_intnl_SystemString
+        EXTERN, "UnityEngineGameObject.__get_name__SystemString"
+        PUSH, __7_intnl_SystemString
+        PUSH, __0_const_intnl_SystemInt32
+        PUSH, buttonValue
+        EXTERN, "SystemString.__Substring__SystemInt32__SystemString"
+        
+         #  if (buttonValue.Length != 1 && buttonValue != "OK" && buttonValue != "CLR")
+        PUSH, buttonValue
+        PUSH, __0_intnl_SystemInt32
+        EXTERN, "SystemString.__get_Length__SystemInt32"
+        PUSH, __0_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __6_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Inequality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __6_intnl_SystemBoolean
+        PUSH, __5_intnl_SystemBoolean
+        COPY
+        PUSH, __5_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000480
+        PUSH, buttonValue
+        PUSH, __8_const_intnl_SystemString
+        PUSH, __7_intnl_SystemBoolean
+        EXTERN, "SystemString.__op_Inequality__SystemString_SystemString__SystemBoolean"
+        PUSH, __5_intnl_SystemBoolean
+        PUSH, __7_intnl_SystemBoolean
+        PUSH, __8_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __8_intnl_SystemBoolean
+        PUSH, __5_intnl_SystemBoolean
+        COPY
+        PUSH, __5_intnl_SystemBoolean
+        PUSH, __4_intnl_SystemBoolean
+        COPY
+        PUSH, __4_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000004F8
+        PUSH, buttonValue
+        PUSH, __9_const_intnl_SystemString
+        PUSH, __9_intnl_SystemBoolean
+        EXTERN, "SystemString.__op_Inequality__SystemString_SystemString__SystemBoolean"
+        PUSH, __4_intnl_SystemBoolean
+        PUSH, __9_intnl_SystemBoolean
+        PUSH, __10_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __10_intnl_SystemBoolean
+        PUSH, __4_intnl_SystemBoolean
+        COPY
+        PUSH, __4_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000056C
+        
+         #  {
+        
+         #  LogError("Button has invalid value! Resetting to 'X'. OldValue: '" + buttonValue + "'.");
+        PUSH, __10_const_intnl_SystemString
+        PUSH, buttonValue
+        PUSH, __5_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __5_intnl_SystemString
+        PUSH, __11_const_intnl_SystemString
+        PUSH, __1_mp_value_String
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __5_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000084
+        
+         #  buttonValue = "X";
+        PUSH, __12_const_intnl_SystemString
+        PUSH, buttonValue
+        COPY
+        
+         #  Log("Button started! Value: " + buttonValue);
+        PUSH, __13_const_intnl_SystemString
+        PUSH, buttonValue
+        PUSH, __0_mp_value_String
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __6_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000008
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public override void Interact()
+    .export _interact
+        
+    _interact:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (Networking.LocalPlayer != null && Networking.LocalPlayer.IsUserInVR())
+        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __0_const_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __12_intnl_SystemBoolean
+        EXTERN, "SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __12_intnl_SystemBoolean
+        PUSH, __11_intnl_SystemBoolean
+        COPY
+        PUSH, __11_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000668
+        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __13_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__IsUserInVR__SystemBoolean"
+        PUSH, __11_intnl_SystemBoolean
+        PUSH, __13_intnl_SystemBoolean
+        PUSH, __14_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __14_intnl_SystemBoolean
+        PUSH, __11_intnl_SystemBoolean
+        COPY
+        PUSH, __11_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000688
+        
+         #  {
+        
+         #  ButtonPressed();
+        PUSH, __7_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x000006D0
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void OnMouseDown()
+    .export _onMouseDown
+        
+    _onMouseDown:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  ButtonPressed();
+        PUSH, __8_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x000006D0
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void ButtonPressed()
+    ButtonPressed:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  Log("Key pressed: " + buttonValue);
+        PUSH, __14_const_intnl_SystemString
+        PUSH, buttonValue
+        PUSH, __0_mp_value_String
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __9_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000008
+        
+         #  keypad.ButtonInput(buttonValue);
+        PUSH, keypad
+        PUSH, __15_const_intnl_SystemString
+        PUSH, buttonValue
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, buttonValue
+        PUSH, __8_intnl_SystemString
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, keypad
+        PUSH, __16_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+.code_end

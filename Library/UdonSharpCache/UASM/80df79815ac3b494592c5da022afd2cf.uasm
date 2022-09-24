@@ -1,0 +1,2748 @@
+.data_start
+
+    .export normal
+    .export inkPoolRoot
+
+    __refl_const_intnl_udonTypeID: %SystemInt64, null
+    __refl_const_intnl_udonTypeName: %SystemString, null
+    normal: %UnityEngineMaterial, null
+    inkPoolRoot: %UnityEngineTransform, null
+    isErasing: %SystemBoolean, null
+    isUser: %SystemBoolean, null
+    results: %UnityEngineColliderArray, null
+    logColor: %UnityEngineColor, null
+    MODE_DRAW_PLANE: %SystemInt32, null
+    MODE_ERASE: %SystemInt32, null
+    MODE_DRAW: %SystemInt32, null
+    MODE_UNKNOWN: %SystemInt32, null
+    inkColliderLayer: %SystemInt32, null
+    erasing: %UnityEngineMaterial, null
+    _renderer: %UnityEngineRenderer, null
+    _eraserRadius: %SystemSingle, null
+    _sphereCollider: %UnityEngineSphereCollider, null
+    _logPrefix: %SystemString, null
+    ColorEndTag: %SystemString, null
+    inkPoolRootName: %SystemString, null
+    _version: %SystemString, null
+    manager: %VRCUdonUdonBehaviour, null
+    _objectSync: %VRCSDK3ComponentsVRCObjectSync, null
+    _pickup: %VRCSDK3ComponentsVRCPickup, null
+    onPlayerJoinedPlayer: %VRCSDKBaseVRCPlayerApi, null
+    _localPlayer: %VRCSDKBaseVRCPlayerApi, null
+    __0_this_intnl_UnityEngineGameObject: %UnityEngineGameObject, this
+    __0_this_intnl_UnityEngineTransform: %UnityEngineTransform, this
+    __0_this_intnl_QvPenUdonScriptQvPen_Eraser: %VRCUdonUdonBehaviour, this
+    __1_other_Collider: %UnityEngineCollider, null
+    __0_other_Collider: %UnityEngineCollider, null
+    __1_mp_c_Color: %UnityEngineColor, null
+    __0_mp_c_Color: %UnityEngineColor, null
+    __0_inkPoolRootGO_GameObject: %UnityEngineGameObject, null
+    __1_i_Int32: %SystemInt32, null
+    __1_count_Int32: %SystemInt32, null
+    __0_i_Int32: %SystemInt32, null
+    __0_count_Int32: %SystemInt32, null
+    __1_mp_index_Int32: %SystemInt32, null
+    __0_mp_mode_Int32: %SystemInt32, null
+    __0_mp_index_Int32: %SystemInt32, null
+    __1_lineRenderer_LineRenderer: %UnityEngineLineRenderer, null
+    __0_lineRenderer_LineRenderer: %UnityEngineLineRenderer, null
+    __2_mp_o_Object: %SystemObject, null
+    __1_mp_o_Object: %SystemObject, null
+    __0_mp_o_Object: %SystemObject, null
+    __0_eraserMiniRadius_Single: %SystemSingle, null
+    __0_mp_parent_Transform: %UnityEngineTransform, null
+    __0_mp_child_Transform: %UnityEngineTransform, null
+    __0_pen_QvPen_Pen: %VRCUdonUdonBehaviour, null
+    __0_synchronizer_QvPen_SequentialSync: %VRCUdonUdonBehaviour, null
+    __0_mp_manager_QvPen_EraserManager: %VRCUdonUdonBehaviour, null
+    __0_middlePosition_Vector3: %UnityEngineVector3, null
+    __0_penIdVector_Vector3: %UnityEngineVector3, null
+    __0_s_Vector3: %UnityEngineVector3, null
+    __0_mp_element_Vector3: %UnityEngineVector3, null
+    __0_data_Vector3Array: %UnityEngineVector3Array, null
+    __5_mp_data_Vector3Array: %UnityEngineVector3Array, null
+    __4_mp_data_Vector3Array: %UnityEngineVector3Array, null
+    __3_mp_data_Vector3Array: %UnityEngineVector3Array, null
+    __2_mp_data_Vector3Array: %UnityEngineVector3Array, null
+    __1_mp_data_Vector3Array: %UnityEngineVector3Array, null
+    __0_mp_data_Vector3Array: %UnityEngineVector3Array, null
+    __0_mp_player_VRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __1_const_intnl_SystemBoolean: %SystemBoolean, null
+    __0_const_intnl_SystemBoolean: %SystemBoolean, null
+    __9_const_intnl_SystemInt32: %SystemInt32, null
+    __8_const_intnl_SystemInt32: %SystemInt32, null
+    __7_const_intnl_SystemInt32: %SystemInt32, null
+    __6_const_intnl_SystemInt32: %SystemInt32, null
+    __5_const_intnl_SystemInt32: %SystemInt32, null
+    __4_const_intnl_SystemInt32: %SystemInt32, null
+    __3_const_intnl_SystemInt32: %SystemInt32, null
+    __2_const_intnl_SystemInt32: %SystemInt32, null
+    __1_const_intnl_SystemInt32: %SystemInt32, null
+    __0_const_intnl_SystemInt32: %SystemInt32, null
+    __1_const_intnl_SystemInt64: %SystemInt64, null
+    __0_const_intnl_SystemInt64: %SystemInt64, null
+    __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget: %VRCUdonCommonInterfacesNetworkEventTarget, null
+    __0_const_intnl_SystemObject: %SystemObject, null
+    __0_const_intnl_UnityEngineQueryTriggerInteraction: %UnityEngineQueryTriggerInteraction, null
+    __1_const_intnl_SystemSingle: %SystemSingle, null
+    __0_const_intnl_SystemSingle: %SystemSingle, null
+    __0_const_intnl_SystemSingleArray: %SystemSingleArray, null
+    __34_const_intnl_SystemString: %SystemString, null
+    __33_const_intnl_SystemString: %SystemString, null
+    __32_const_intnl_SystemString: %SystemString, null
+    __31_const_intnl_SystemString: %SystemString, null
+    __30_const_intnl_SystemString: %SystemString, null
+    __29_const_intnl_SystemString: %SystemString, null
+    __28_const_intnl_SystemString: %SystemString, null
+    __27_const_intnl_SystemString: %SystemString, null
+    __26_const_intnl_SystemString: %SystemString, null
+    __25_const_intnl_SystemString: %SystemString, null
+    __24_const_intnl_SystemString: %SystemString, null
+    __23_const_intnl_SystemString: %SystemString, null
+    __22_const_intnl_SystemString: %SystemString, null
+    __21_const_intnl_SystemString: %SystemString, null
+    __20_const_intnl_SystemString: %SystemString, null
+    __19_const_intnl_SystemString: %SystemString, null
+    __18_const_intnl_SystemString: %SystemString, null
+    __17_const_intnl_SystemString: %SystemString, null
+    __16_const_intnl_SystemString: %SystemString, null
+    __15_const_intnl_SystemString: %SystemString, null
+    __14_const_intnl_SystemString: %SystemString, null
+    __13_const_intnl_SystemString: %SystemString, null
+    __12_const_intnl_SystemString: %SystemString, null
+    __11_const_intnl_SystemString: %SystemString, null
+    __10_const_intnl_SystemString: %SystemString, null
+    __9_const_intnl_SystemString: %SystemString, null
+    __8_const_intnl_SystemString: %SystemString, null
+    __7_const_intnl_SystemString: %SystemString, null
+    __6_const_intnl_SystemString: %SystemString, null
+    __5_const_intnl_SystemString: %SystemString, null
+    __4_const_intnl_SystemString: %SystemString, null
+    __3_const_intnl_SystemString: %SystemString, null
+    __2_const_intnl_SystemString: %SystemString, null
+    __1_const_intnl_SystemString: %SystemString, null
+    __0_const_intnl_SystemString: %SystemString, null
+    __5_const_intnl_SystemType: %SystemType, null
+    __4_const_intnl_SystemType: %SystemType, null
+    __3_const_intnl_SystemType: %SystemType, null
+    __2_const_intnl_SystemType: %SystemType, null
+    __1_const_intnl_SystemType: %SystemType, null
+    __0_const_intnl_SystemType: %SystemType, null
+    __0_const_intnl_QvPenUdonScriptQvPen_SequentialSync: %VRCUdonUdonBehaviour, null
+    __38_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __37_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __36_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __35_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __34_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __33_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __32_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __31_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __30_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __29_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __28_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __27_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __26_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __25_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __24_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __23_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __22_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __21_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __20_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __19_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __18_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __17_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __16_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __15_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __14_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __13_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __12_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __11_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __10_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __9_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __8_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __7_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __6_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __5_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __4_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __3_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __2_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __1_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __0_const_intnl_exitJumpLoc_UInt32: %SystemUInt32, null
+    __0_const_intnl_SystemUInt32: %SystemUInt32, null
+    __73_intnl_SystemBoolean: %SystemBoolean, null
+    __72_intnl_SystemBoolean: %SystemBoolean, null
+    __70_intnl_SystemBoolean: %SystemBoolean, null
+    __69_intnl_SystemBoolean: %SystemBoolean, null
+    __68_intnl_SystemBoolean: %SystemBoolean, null
+    __67_intnl_SystemBoolean: %SystemBoolean, null
+    __66_intnl_SystemBoolean: %SystemBoolean, null
+    __65_intnl_SystemBoolean: %SystemBoolean, null
+    __64_intnl_SystemBoolean: %SystemBoolean, null
+    __63_intnl_SystemBoolean: %SystemBoolean, null
+    __62_intnl_SystemBoolean: %SystemBoolean, null
+    __61_intnl_SystemBoolean: %SystemBoolean, null
+    __60_intnl_SystemBoolean: %SystemBoolean, null
+    __59_intnl_SystemBoolean: %SystemBoolean, null
+    __58_intnl_SystemBoolean: %SystemBoolean, null
+    __57_intnl_SystemBoolean: %SystemBoolean, null
+    __56_intnl_SystemBoolean: %SystemBoolean, null
+    __55_intnl_SystemBoolean: %SystemBoolean, null
+    __54_intnl_SystemBoolean: %SystemBoolean, null
+    __53_intnl_SystemBoolean: %SystemBoolean, null
+    __52_intnl_SystemBoolean: %SystemBoolean, null
+    __51_intnl_SystemBoolean: %SystemBoolean, null
+    __50_intnl_SystemBoolean: %SystemBoolean, null
+    __49_intnl_SystemBoolean: %SystemBoolean, null
+    __48_intnl_SystemBoolean: %SystemBoolean, null
+    __47_intnl_SystemBoolean: %SystemBoolean, null
+    __46_intnl_SystemBoolean: %SystemBoolean, null
+    __45_intnl_SystemBoolean: %SystemBoolean, null
+    __44_intnl_SystemBoolean: %SystemBoolean, null
+    __43_intnl_SystemBoolean: %SystemBoolean, null
+    __42_intnl_SystemBoolean: %SystemBoolean, null
+    __41_intnl_SystemBoolean: %SystemBoolean, null
+    __40_intnl_SystemBoolean: %SystemBoolean, null
+    __39_intnl_SystemBoolean: %SystemBoolean, null
+    __38_intnl_SystemBoolean: %SystemBoolean, null
+    __37_intnl_SystemBoolean: %SystemBoolean, null
+    __36_intnl_SystemBoolean: %SystemBoolean, null
+    __35_intnl_SystemBoolean: %SystemBoolean, null
+    __34_intnl_SystemBoolean: %SystemBoolean, null
+    __33_intnl_SystemBoolean: %SystemBoolean, null
+    __32_intnl_SystemBoolean: %SystemBoolean, null
+    __31_intnl_SystemBoolean: %SystemBoolean, null
+    __30_intnl_SystemBoolean: %SystemBoolean, null
+    __29_intnl_SystemBoolean: %SystemBoolean, null
+    __28_intnl_SystemBoolean: %SystemBoolean, null
+    __27_intnl_SystemBoolean: %SystemBoolean, null
+    __26_intnl_SystemBoolean: %SystemBoolean, null
+    __25_intnl_SystemBoolean: %SystemBoolean, null
+    __24_intnl_SystemBoolean: %SystemBoolean, null
+    __23_intnl_SystemBoolean: %SystemBoolean, null
+    __22_intnl_SystemBoolean: %SystemBoolean, null
+    __21_intnl_SystemBoolean: %SystemBoolean, null
+    __20_intnl_SystemBoolean: %SystemBoolean, null
+    __19_intnl_SystemBoolean: %SystemBoolean, null
+    __18_intnl_SystemBoolean: %SystemBoolean, null
+    __17_intnl_SystemBoolean: %SystemBoolean, null
+    __16_intnl_SystemBoolean: %SystemBoolean, null
+    __15_intnl_SystemBoolean: %SystemBoolean, null
+    __14_intnl_SystemBoolean: %SystemBoolean, null
+    __13_intnl_SystemBoolean: %SystemBoolean, null
+    __12_intnl_SystemBoolean: %SystemBoolean, null
+    __11_intnl_SystemBoolean: %SystemBoolean, null
+    __10_intnl_SystemBoolean: %SystemBoolean, null
+    __9_intnl_SystemBoolean: %SystemBoolean, null
+    __8_intnl_SystemBoolean: %SystemBoolean, null
+    __7_intnl_SystemBoolean: %SystemBoolean, null
+    __6_intnl_SystemBoolean: %SystemBoolean, null
+    __4_intnl_SystemBoolean: %SystemBoolean, null
+    __74_intnl_SystemBoolean: %SystemBoolean, null
+    __71_intnl_SystemBoolean: %SystemBoolean, null
+    __5_intnl_SystemBoolean: %SystemBoolean, null
+    __3_intnl_SystemBoolean: %SystemBoolean, null
+    __2_intnl_SystemBoolean: %SystemBoolean, null
+    __1_intnl_SystemBoolean: %SystemBoolean, null
+    __0_intnl_SystemBoolean: %SystemBoolean, null
+    __0_intnl_returnValSymbol_Boolean: %SystemBoolean, null
+    __1_intnl_UnityEngineCollider: %UnityEngineCollider, null
+    __0_intnl_UnityEngineCollider: %UnityEngineCollider, null
+    __1_intnl_UnityEngineColor: %UnityEngineColor, null
+    __0_intnl_UnityEngineColor: %UnityEngineColor, null
+    __2_intnl_UnityEngineComponent: %UnityEngineComponent, null
+    __1_intnl_UnityEngineComponent: %UnityEngineComponent, null
+    __0_intnl_UnityEngineComponent: %UnityEngineComponent, null
+    __0_intnl_UnityEngineComponentArray: %UnityEngineComponentArray, null
+    __1_intnl_UnityEngineGameObject: %UnityEngineGameObject, null
+    __0_intnl_UnityEngineGameObject: %UnityEngineGameObject, null
+    __35_intnl_SystemInt32: %SystemInt32, null
+    __34_intnl_SystemInt32: %SystemInt32, null
+    __33_intnl_SystemInt32: %SystemInt32, null
+    __32_intnl_SystemInt32: %SystemInt32, null
+    __31_intnl_SystemInt32: %SystemInt32, null
+    __30_intnl_SystemInt32: %SystemInt32, null
+    __29_intnl_SystemInt32: %SystemInt32, null
+    __28_intnl_SystemInt32: %SystemInt32, null
+    __27_intnl_SystemInt32: %SystemInt32, null
+    __26_intnl_SystemInt32: %SystemInt32, null
+    __25_intnl_SystemInt32: %SystemInt32, null
+    __24_intnl_SystemInt32: %SystemInt32, null
+    __23_intnl_SystemInt32: %SystemInt32, null
+    __22_intnl_SystemInt32: %SystemInt32, null
+    __21_intnl_SystemInt32: %SystemInt32, null
+    __20_intnl_SystemInt32: %SystemInt32, null
+    __19_intnl_SystemInt32: %SystemInt32, null
+    __18_intnl_SystemInt32: %SystemInt32, null
+    __17_intnl_SystemInt32: %SystemInt32, null
+    __16_intnl_SystemInt32: %SystemInt32, null
+    __15_intnl_SystemInt32: %SystemInt32, null
+    __14_intnl_SystemInt32: %SystemInt32, null
+    __13_intnl_SystemInt32: %SystemInt32, null
+    __12_intnl_SystemInt32: %SystemInt32, null
+    __11_intnl_SystemInt32: %SystemInt32, null
+    __10_intnl_SystemInt32: %SystemInt32, null
+    __9_intnl_SystemInt32: %SystemInt32, null
+    __8_intnl_SystemInt32: %SystemInt32, null
+    __7_intnl_SystemInt32: %SystemInt32, null
+    __6_intnl_SystemInt32: %SystemInt32, null
+    __5_intnl_SystemInt32: %SystemInt32, null
+    __4_intnl_SystemInt32: %SystemInt32, null
+    __3_intnl_SystemInt32: %SystemInt32, null
+    __2_intnl_SystemInt32: %SystemInt32, null
+    __1_intnl_SystemInt32: %SystemInt32, null
+    __0_intnl_SystemInt32: %SystemInt32, null
+    __1_intnl_returnValSymbol_Int32: %SystemInt32, null
+    __0_intnl_returnValSymbol_Int32: %SystemInt32, null
+    __1_intnl_SystemInt64: %SystemInt64, null
+    __0_intnl_SystemInt64: %SystemInt64, null
+    __1_intnl_UnityEngineLineRenderer: %UnityEngineLineRenderer, null
+    __0_intnl_UnityEngineLineRenderer: %UnityEngineLineRenderer, null
+    __3_intnl_SystemObject: %SystemObject, null
+    __2_intnl_SystemObject: %SystemObject, null
+    __1_intnl_SystemObject: %SystemObject, null
+    __0_intnl_SystemObject: %SystemObject, null
+    __0_intnl_UnityEngineQuaternion: %UnityEngineQuaternion, null
+    __5_intnl_UnityEngineRenderer: %UnityEngineRenderer, null
+    __4_intnl_UnityEngineRenderer: %UnityEngineRenderer, null
+    __3_intnl_UnityEngineRenderer: %UnityEngineRenderer, null
+    __2_intnl_UnityEngineRenderer: %UnityEngineRenderer, null
+    __1_intnl_UnityEngineRenderer: %UnityEngineRenderer, null
+    __0_intnl_UnityEngineRenderer: %UnityEngineRenderer, null
+    __0_intnl_returnValSymbol_Renderer: %UnityEngineRenderer, null
+    __17_intnl_SystemSingle: %SystemSingle, null
+    __16_intnl_SystemSingle: %SystemSingle, null
+    __15_intnl_SystemSingle: %SystemSingle, null
+    __14_intnl_SystemSingle: %SystemSingle, null
+    __13_intnl_SystemSingle: %SystemSingle, null
+    __12_intnl_SystemSingle: %SystemSingle, null
+    __11_intnl_SystemSingle: %SystemSingle, null
+    __10_intnl_SystemSingle: %SystemSingle, null
+    __9_intnl_SystemSingle: %SystemSingle, null
+    __8_intnl_SystemSingle: %SystemSingle, null
+    __7_intnl_SystemSingle: %SystemSingle, null
+    __6_intnl_SystemSingle: %SystemSingle, null
+    __5_intnl_SystemSingle: %SystemSingle, null
+    __4_intnl_SystemSingle: %SystemSingle, null
+    __3_intnl_SystemSingle: %SystemSingle, null
+    __2_intnl_SystemSingle: %SystemSingle, null
+    __1_intnl_SystemSingle: %SystemSingle, null
+    __0_intnl_SystemSingle: %SystemSingle, null
+    __0_intnl_returnValSymbol_Single: %SystemSingle, null
+    __3_intnl_UnityEngineSphereCollider: %UnityEngineSphereCollider, null
+    __2_intnl_UnityEngineSphereCollider: %UnityEngineSphereCollider, null
+    __1_intnl_UnityEngineSphereCollider: %UnityEngineSphereCollider, null
+    __0_intnl_UnityEngineSphereCollider: %UnityEngineSphereCollider, null
+    __0_intnl_returnValSymbol_SphereCollider: %UnityEngineSphereCollider, null
+    __25_intnl_SystemString: %SystemString, null
+    __24_intnl_SystemString: %SystemString, null
+    __23_intnl_SystemString: %SystemString, null
+    __22_intnl_SystemString: %SystemString, null
+    __21_intnl_SystemString: %SystemString, null
+    __6_intnl_interpolatedStr_String: %SystemString, null
+    __11_intnl_SystemString: %SystemString, null
+    __10_intnl_SystemString: %SystemString, null
+    __4_intnl_interpolatedStr_String: %SystemString, null
+    __9_intnl_SystemString: %SystemString, null
+    __8_intnl_SystemString: %SystemString, null
+    __7_intnl_SystemString: %SystemString, null
+    __3_intnl_interpolatedStr_String: %SystemString, null
+    __6_intnl_SystemString: %SystemString, null
+    __5_intnl_SystemString: %SystemString, null
+    __4_intnl_SystemString: %SystemString, null
+    __2_intnl_interpolatedStr_String: %SystemString, null
+    __3_intnl_SystemString: %SystemString, null
+    __2_intnl_SystemString: %SystemString, null
+    __1_intnl_SystemString: %SystemString, null
+    __1_intnl_interpolatedStr_String: %SystemString, null
+    __0_intnl_SystemString: %SystemString, null
+    __0_intnl_interpolatedStr_String: %SystemString, null
+    __20_intnl_SystemString: %SystemString, null
+    __19_intnl_SystemString: %SystemString, null
+    __18_intnl_SystemString: %SystemString, null
+    __17_intnl_SystemString: %SystemString, null
+    __16_intnl_SystemString: %SystemString, null
+    __15_intnl_SystemString: %SystemString, null
+    __14_intnl_SystemString: %SystemString, null
+    __13_intnl_SystemString: %SystemString, null
+    __12_intnl_SystemString: %SystemString, null
+    __5_intnl_interpolatedStr_String: %SystemString, null
+    __2_intnl_returnValSymbol_String: %SystemString, null
+    __1_intnl_returnValSymbol_String: %SystemString, null
+    __0_intnl_returnValSymbol_String: %SystemString, null
+    __34_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __33_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __32_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __31_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __30_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __29_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __28_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __27_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __26_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __25_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __24_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __23_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __22_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __21_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __20_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __19_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __18_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __17_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __16_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __15_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __14_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __13_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __12_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __11_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __10_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __9_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __8_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __7_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __6_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __5_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __4_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __3_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __2_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __1_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __0_intnl_UnityEngineTransform: %UnityEngineTransform, null
+    __1_intnl_QvPenUdonScriptQvPen_Pen: %VRCUdonUdonBehaviour, null
+    __0_intnl_QvPenUdonScriptQvPen_Pen: %VRCUdonUdonBehaviour, null
+    __1_intnl_QvPenUdonScriptQvPen_SequentialSync: %VRCUdonUdonBehaviour, null
+    __0_intnl_QvPenUdonScriptQvPen_SequentialSync: %VRCUdonUdonBehaviour, null
+    __0_intnl_returnTarget_UInt32: %SystemUInt32, null
+    __11_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __10_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __9_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __8_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __7_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __6_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __5_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __4_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __3_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __2_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __1_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __0_intnl_UnityEngineVector3: %UnityEngineVector3, null
+    __0_intnl_returnValSymbol_Vector3: %UnityEngineVector3, null
+    __0_intnl_UnityEngineVector3Array: %UnityEngineVector3Array, null
+    __1_intnl_VRCSDK3ComponentsVRCObjectSync: %VRCSDK3ComponentsVRCObjectSync, null
+    __0_intnl_VRCSDK3ComponentsVRCObjectSync: %VRCSDK3ComponentsVRCObjectSync, null
+    __0_intnl_returnValSymbol_VRCObjectSync: %VRCSDK3ComponentsVRCObjectSync, null
+    __4_intnl_VRCSDK3ComponentsVRCPickup: %VRCSDK3ComponentsVRCPickup, null
+    __2_intnl_VRCSDK3ComponentsVRCPickup: %VRCSDK3ComponentsVRCPickup, null
+    __1_intnl_VRCSDK3ComponentsVRCPickup: %VRCSDK3ComponentsVRCPickup, null
+    __3_intnl_VRCSDK3ComponentsVRCPickup: %VRCSDK3ComponentsVRCPickup, null
+    __0_intnl_VRCSDK3ComponentsVRCPickup: %VRCSDK3ComponentsVRCPickup, null
+    __0_intnl_returnValSymbol_VRC_Pickup: %VRCSDK3ComponentsVRCPickup, null
+    __2_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __1_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __0_intnl_VRCSDKBaseVRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+    __0_intnl_returnValSymbol_VRCPlayerApi: %VRCSDKBaseVRCPlayerApi, null
+
+.data_end
+
+        
+         #  using UdonSharp;
+        
+         #  using UnityEngine;
+        
+         #  using VRC.SDK3.Components;
+        
+         #  using VRC.SDKBase;
+        
+         #  using VRC.Udon.Common.Interfaces;
+        
+         #  namespace QvPen.UdonScript
+        
+         #  [DefaultExecutionOrder(10)]
+        
+         #  [UdonBehaviourSyncMode(BehaviourSyncMode.NoVariableSync)]
+        
+         #  public class QvPen_Eraser : UdonSharpBehaviour
+.code_start
+.update_order 10
+        
+         #  private const string _version = "v3.1.2";
+        
+         #  [SerializeField]
+        
+         #  private Material erasing;
+        
+         #  [SerializeField]
+        
+         #  [FieldChangeCallback(nameof(renderer))]
+        
+         #  private Renderer renderer => _renderer ? _renderer : (_renderer = GetComponentInChildren<Renderer>(true));
+    .export _get_renderer
+        
+    _get_renderer:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, _renderer
+        PUSH, __0_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __0_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000004C
+        PUSH, _renderer
+        PUSH, __0_intnl_UnityEngineRenderer
+        COPY
+        JUMP, 0x000000A0
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_Eraser
+        PUSH, __0_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __0_intnl_UnityEngineTransform
+        PUSH, __0_const_intnl_SystemBoolean
+        PUSH, __0_const_intnl_SystemType
+        PUSH, _renderer
+        EXTERN, "UnityEngineRenderer.__GetComponentInChildren__SystemBoolean__T"
+        PUSH, _renderer
+        PUSH, __0_intnl_UnityEngineRenderer
+        COPY
+        PUSH, __0_intnl_UnityEngineRenderer
+        PUSH, __0_intnl_returnValSymbol_Renderer
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Property epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  [FieldChangeCallback(nameof(sphereCollider))]
+        
+         #  private SphereCollider sphereCollider => _sphereCollider ? _sphereCollider : (_sphereCollider = GetComponent<SphereCollider>());
+    .export _get_sphereCollider
+        
+    _get_sphereCollider:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, _sphereCollider
+        PUSH, __1_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __1_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000114
+        PUSH, _sphereCollider
+        PUSH, __0_intnl_UnityEngineSphereCollider
+        COPY
+        JUMP, 0x00000160
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_Eraser
+        PUSH, __1_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __1_intnl_UnityEngineTransform
+        PUSH, __1_const_intnl_SystemType
+        PUSH, _sphereCollider
+        EXTERN, "UnityEngineSphereCollider.__GetComponent__T"
+        PUSH, _sphereCollider
+        PUSH, __0_intnl_UnityEngineSphereCollider
+        COPY
+        PUSH, __0_intnl_UnityEngineSphereCollider
+        PUSH, __0_intnl_returnValSymbol_SphereCollider
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Property epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  [FieldChangeCallback(nameof(pickup))]
+        
+         #  private VRC_Pickup pickup => _pickup ? _pickup : (_pickup = (VRC_Pickup)GetComponent(typeof(VRC_Pickup)));
+    .export _get_pickup
+        
+    _get_pickup:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, _pickup
+        PUSH, __2_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __2_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000001D4
+        PUSH, _pickup
+        PUSH, __0_intnl_VRCSDK3ComponentsVRCPickup
+        COPY
+        JUMP, 0x0000021C
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_Eraser
+        PUSH, __2_const_intnl_SystemType
+        PUSH, __0_intnl_UnityEngineComponent
+        EXTERN, "UnityEngineComponent.__GetComponent__SystemType__UnityEngineComponent"
+        PUSH, __0_intnl_UnityEngineComponent
+        PUSH, _pickup
+        COPY
+        PUSH, _pickup
+        PUSH, __0_intnl_VRCSDK3ComponentsVRCPickup
+        COPY
+        PUSH, __0_intnl_VRCSDK3ComponentsVRCPickup
+        PUSH, __0_intnl_returnValSymbol_VRC_Pickup
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Property epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  [FieldChangeCallback(nameof(objectSync))]
+        
+         #  private VRCObjectSync objectSync
+    .export _get_objectSync
+        
+    _get_objectSync:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  => _objectSync ? _objectSync : (_objectSync = (VRCObjectSync)GetComponent(typeof(VRCObjectSync)));
+        PUSH, _objectSync
+        PUSH, __3_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __3_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000290
+        PUSH, _objectSync
+        PUSH, __0_intnl_VRCSDK3ComponentsVRCObjectSync
+        COPY
+        JUMP, 0x000002D8
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_Eraser
+        PUSH, __3_const_intnl_SystemType
+        PUSH, __1_intnl_UnityEngineComponent
+        EXTERN, "UnityEngineComponent.__GetComponent__SystemType__UnityEngineComponent"
+        PUSH, __1_intnl_UnityEngineComponent
+        PUSH, _objectSync
+        COPY
+        PUSH, _objectSync
+        PUSH, __0_intnl_VRCSDK3ComponentsVRCObjectSync
+        COPY
+        PUSH, __0_intnl_VRCSDK3ComponentsVRCObjectSync
+        PUSH, __0_intnl_returnValSymbol_VRCObjectSync
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Property epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private bool isUser;
+        
+         #  private bool isErasing;
+        
+         #  private QvPen_EraserManager manager;
+        
+         #  [FieldChangeCallback(nameof(eraserRadius))]
+        
+         #  private float eraserRadius {
+    _get_eraserRadius:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  get {
+        
+         #  if (_eraserRadius > 0f)
+        PUSH, _eraserRadius
+        PUSH, __0_const_intnl_SystemSingle
+        PUSH, __4_intnl_SystemBoolean
+        EXTERN, "SystemSingle.__op_GreaterThan__SystemSingle_SystemSingle__SystemBoolean"
+        PUSH, __4_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000368
+        
+         #  return _eraserRadius;
+        PUSH, _eraserRadius
+        PUSH, __0_intnl_returnValSymbol_Single
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        JUMP, 0x000004D8
+        
+         #  else
+        
+         #  {
+        
+         #  var s = transform.lossyScale;
+        PUSH, __0_this_intnl_UnityEngineTransform
+        PUSH, __0_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__get_lossyScale__UnityEngineVector3"
+        PUSH, __0_intnl_UnityEngineVector3
+        PUSH, __0_s_Vector3
+        COPY
+        
+         #  return _eraserRadius = Mathf.Min(s.x, s.y, s.z) * sphereCollider.radius;
+        PUSH, __0_s_Vector3
+        PUSH, __0_intnl_SystemSingle
+        EXTERN, "UnityEngineVector3.__get_x__SystemSingle"
+        PUSH, __0_s_Vector3
+        PUSH, __1_intnl_SystemSingle
+        EXTERN, "UnityEngineVector3.__get_y__SystemSingle"
+        PUSH, __0_s_Vector3
+        PUSH, __2_intnl_SystemSingle
+        EXTERN, "UnityEngineVector3.__get_z__SystemSingle"
+        PUSH, __0_const_intnl_SystemSingleArray
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __0_intnl_SystemSingle
+        EXTERN, "SystemSingleArray.__Set__SystemInt32_SystemSingle__SystemVoid"
+        PUSH, __0_const_intnl_SystemSingleArray
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, __1_intnl_SystemSingle
+        EXTERN, "SystemSingleArray.__Set__SystemInt32_SystemSingle__SystemVoid"
+        PUSH, __0_const_intnl_SystemSingleArray
+        PUSH, __3_const_intnl_SystemInt32
+        PUSH, __2_intnl_SystemSingle
+        EXTERN, "SystemSingleArray.__Set__SystemInt32_SystemSingle__SystemVoid"
+        PUSH, __0_const_intnl_SystemSingleArray
+        PUSH, __3_intnl_SystemSingle
+        EXTERN, "UnityEngineMathf.__Min__SystemSingleArray__SystemSingle"
+        PUSH, __0_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x000000D0
+        PUSH, __0_intnl_returnValSymbol_SphereCollider
+        PUSH, __1_intnl_UnityEngineSphereCollider
+        COPY
+        PUSH, __1_intnl_UnityEngineSphereCollider
+        PUSH, __4_intnl_SystemSingle
+        EXTERN, "UnityEngineSphereCollider.__get_radius__SystemSingle"
+        PUSH, __3_intnl_SystemSingle
+        PUSH, __4_intnl_SystemSingle
+        PUSH, _eraserRadius
+        EXTERN, "SystemSingle.__op_Multiplication__SystemSingle_SystemSingle__SystemSingle"
+        PUSH, _eraserRadius
+        PUSH, __0_intnl_returnValSymbol_Single
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        PUSH, __0_intnl_returnTarget_UInt32 # Property epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private int inkColliderLayer;
+        
+         #  private const string inkPoolRootName = "QvPen_InkPool";
+        
+         #  [FieldChangeCallback(nameof(localPlayer))]
+        
+         #  private VRCPlayerApi localPlayer => _localPlayer ?? (_localPlayer = Networking.LocalPlayer);
+    .export _get_localPlayer
+        
+    _get_localPlayer:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, _localPlayer
+        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi
+        COPY
+        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __0_const_intnl_SystemObject
+        PUSH, __5_intnl_SystemBoolean
+        EXTERN, "SystemObject.__op_Equality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __5_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000055C
+        PUSH, _localPlayer
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, _localPlayer
+        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi
+        COPY
+        PUSH, __0_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __0_intnl_returnValSymbol_VRCPlayerApi
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Property epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _Init(QvPen_EraserManager manager)
+    .export _Init
+        
+    _Init:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  this.manager = manager;
+        PUSH, __0_mp_manager_QvPen_EraserManager
+        PUSH, manager
+        COPY
+        
+         #  inkColliderLayer = manager.inkColliderLayer;
+        PUSH, __0_mp_manager_QvPen_EraserManager
+        PUSH, __7_const_intnl_SystemString
+        PUSH, __0_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __0_intnl_SystemObject
+        PUSH, inkColliderLayer
+        EXTERN, "SystemConvert.__ToInt32__SystemObject__SystemInt32"
+        
+         #  var inkPoolRootGO = GameObject.Find($"/{inkPoolRootName}");
+        PUSH, __8_const_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_interpolatedStr_String
+        PUSH, inkPoolRootName
+        PUSH, __0_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __0_intnl_SystemString
+        PUSH, __0_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_intnl_interpolatedStr_String
+        PUSH, __0_intnl_UnityEngineGameObject
+        EXTERN, "UnityEngineGameObject.__Find__SystemString__UnityEngineGameObject"
+        PUSH, __0_intnl_UnityEngineGameObject
+        PUSH, __0_inkPoolRootGO_GameObject
+        COPY
+        
+         #  if (inkPoolRootGO)
+        PUSH, __0_inkPoolRootGO_GameObject
+        PUSH, __6_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __6_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000694
+        
+         #  inkPoolRoot = inkPoolRootGO.transform;
+        PUSH, __0_inkPoolRootGO_GameObject
+        PUSH, inkPoolRoot
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        JUMP, 0x00000728
+        
+         #  else
+        
+         #  {
+        
+         #  inkPoolRootGO = inkPoolRoot.gameObject;
+        PUSH, inkPoolRoot
+        PUSH, __0_inkPoolRootGO_GameObject
+        EXTERN, "UnityEngineTransform.__get_gameObject__UnityEngineGameObject"
+        
+         #  inkPoolRootGO.name = inkPoolRootName;
+        PUSH, __0_inkPoolRootGO_GameObject
+        PUSH, inkPoolRootName
+        EXTERN, "UnityEngineGameObject.__set_name__SystemString__SystemVoid"
+        
+         #  SetParentAndResetLocalTransform(inkPoolRootGO.transform, null);
+        PUSH, __0_inkPoolRootGO_GameObject
+        PUSH, __0_mp_child_Transform
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __0_const_intnl_SystemObject
+        PUSH, __0_mp_parent_Transform
+        COPY
+        PUSH, __1_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00002B78
+        
+         #  inkPoolRootGO.transform.SetAsFirstSibling();
+        PUSH, __0_inkPoolRootGO_GameObject
+        PUSH, __2_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineGameObject.__get_transform__UnityEngineTransform"
+        PUSH, __2_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__SetAsFirstSibling__SystemVoid"
+        
+         #  erasing = renderer.sharedMaterial;
+        PUSH, __2_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000008
+        PUSH, __0_intnl_returnValSymbol_Renderer
+        PUSH, __1_intnl_UnityEngineRenderer
+        COPY
+        PUSH, __1_intnl_UnityEngineRenderer
+        PUSH, erasing
+        EXTERN, "UnityEngineRenderer.__get_sharedMaterial__UnityEngineMaterial"
+        
+         #  pickup.InteractionText = "Eraser";
+        PUSH, __3_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000190
+        PUSH, __0_intnl_returnValSymbol_VRC_Pickup
+        PUSH, __1_intnl_VRCSDK3ComponentsVRCPickup
+        COPY
+        PUSH, __1_intnl_VRCSDK3ComponentsVRCPickup
+        PUSH, __9_const_intnl_SystemString
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__set_InteractionText__SystemString"
+        
+         #  pickup.UseText = "Erase";
+        PUSH, __4_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000190
+        PUSH, __0_intnl_returnValSymbol_VRC_Pickup
+        PUSH, __2_intnl_VRCSDK3ComponentsVRCPickup
+        COPY
+        PUSH, __2_intnl_VRCSDK3ComponentsVRCPickup
+        PUSH, __10_const_intnl_SystemString
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__set_UseText__SystemString"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public override void OnPlayerJoined(VRCPlayerApi player)
+    .export _onPlayerJoined
+        
+    _onPlayerJoined:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, onPlayerJoinedPlayer
+        PUSH, __0_mp_player_VRCPlayerApi
+        COPY
+        
+         #  {
+        
+         #  if (isUser && isErasing)
+        PUSH, isUser
+        PUSH, __7_intnl_SystemBoolean
+        COPY
+        PUSH, __7_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000864
+        PUSH, __7_intnl_SystemBoolean
+        PUSH, isErasing
+        PUSH, __8_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __8_intnl_SystemBoolean
+        PUSH, __7_intnl_SystemBoolean
+        COPY
+        PUSH, __7_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000894
+        
+         #  SendCustomNetworkEvent(NetworkEventTarget.All, nameof(OnPickupEvent));
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_Eraser
+        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget
+        PUSH, __11_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public override void OnPickup()
+    .export _onPickup
+        
+    _onPickup:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  isUser = true;
+        PUSH, __0_const_intnl_SystemBoolean
+        PUSH, isUser
+        COPY
+        
+         #  sphereCollider.enabled = false;
+        PUSH, __5_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x000000D0
+        PUSH, __0_intnl_returnValSymbol_SphereCollider
+        PUSH, __2_intnl_UnityEngineSphereCollider
+        COPY
+        PUSH, __2_intnl_UnityEngineSphereCollider
+        PUSH, __1_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineSphereCollider.__set_enabled__SystemBoolean__SystemVoid"
+        
+         #  manager._TakeOwnership();
+        PUSH, manager
+        PUSH, __12_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, manager
+        PUSH, __13_const_intnl_SystemString
+        PUSH, __1_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __1_intnl_SystemObject
+        PUSH, __9_intnl_SystemBoolean
+        EXTERN, "SystemConvert.__ToBoolean__SystemObject__SystemBoolean"
+        
+         #  manager.SendCustomNetworkEvent(NetworkEventTarget.All, nameof(QvPen_EraserManager.StartUsing));
+        PUSH, manager
+        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget
+        PUSH, __14_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        
+         #  SendCustomNetworkEvent(NetworkEventTarget.All, nameof(OnPickupEvent));
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_Eraser
+        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget
+        PUSH, __11_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public override void OnDrop()
+    .export _onDrop
+        
+    _onDrop:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  isUser = false;
+        PUSH, __1_const_intnl_SystemBoolean
+        PUSH, isUser
+        COPY
+        
+         #  sphereCollider.enabled = true;
+        PUSH, __6_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x000000D0
+        PUSH, __0_intnl_returnValSymbol_SphereCollider
+        PUSH, __3_intnl_UnityEngineSphereCollider
+        COPY
+        PUSH, __3_intnl_UnityEngineSphereCollider
+        PUSH, __0_const_intnl_SystemBoolean
+        EXTERN, "UnityEngineSphereCollider.__set_enabled__SystemBoolean__SystemVoid"
+        
+         #  manager._ClearSyncBuffer();
+        PUSH, manager
+        PUSH, __15_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        
+         #  manager.SendCustomNetworkEvent(NetworkEventTarget.All, nameof(QvPen_EraserManager.EndUsing));
+        PUSH, manager
+        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget
+        PUSH, __16_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        
+         #  SendCustomNetworkEvent(NetworkEventTarget.All, nameof(OnDropEvent));
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_Eraser
+        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget
+        PUSH, __17_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public override void OnPickupUseDown()
+    .export _onPickupUseDown
+        
+    _onPickupUseDown:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  SendCustomNetworkEvent(NetworkEventTarget.All, nameof(StartErasing));
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_Eraser
+        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget
+        PUSH, __18_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public override void OnPickupUseUp()
+    .export _onPickupUseUp
+        
+    _onPickupUseUp:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  SendCustomNetworkEvent(NetworkEventTarget.All, nameof(FinishErasing));
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_Eraser
+        PUSH, __0_const_intnl_VRCUdonCommonInterfacesNetworkEventTarget
+        PUSH, __19_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomNetworkEvent__VRCUdonCommonInterfacesNetworkEventTarget_SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void OnPickupEvent() => renderer.sharedMaterial = normal;
+    .export OnPickupEvent
+        
+    OnPickupEvent:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, __7_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000008
+        PUSH, __0_intnl_returnValSymbol_Renderer
+        PUSH, __2_intnl_UnityEngineRenderer
+        COPY
+        PUSH, __2_intnl_UnityEngineRenderer
+        PUSH, normal
+        EXTERN, "UnityEngineRenderer.__set_sharedMaterial__UnityEngineMaterial__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void OnDropEvent() => renderer.sharedMaterial = erasing;
+    .export OnDropEvent
+        
+    OnDropEvent:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, __8_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000008
+        PUSH, __0_intnl_returnValSymbol_Renderer
+        PUSH, __3_intnl_UnityEngineRenderer
+        COPY
+        PUSH, __3_intnl_UnityEngineRenderer
+        PUSH, erasing
+        EXTERN, "UnityEngineRenderer.__set_sharedMaterial__UnityEngineMaterial__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void StartErasing()
+    .export StartErasing
+        
+    StartErasing:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  isErasing = true;
+        PUSH, __0_const_intnl_SystemBoolean
+        PUSH, isErasing
+        COPY
+        
+         #  renderer.sharedMaterial = erasing;
+        PUSH, __9_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000008
+        PUSH, __0_intnl_returnValSymbol_Renderer
+        PUSH, __4_intnl_UnityEngineRenderer
+        COPY
+        PUSH, __4_intnl_UnityEngineRenderer
+        PUSH, erasing
+        EXTERN, "UnityEngineRenderer.__set_sharedMaterial__UnityEngineMaterial__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void FinishErasing()
+    .export FinishErasing
+        
+    FinishErasing:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  isErasing = false;
+        PUSH, __1_const_intnl_SystemBoolean
+        PUSH, isErasing
+        COPY
+        
+         #  renderer.sharedMaterial = normal;
+        PUSH, __10_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000008
+        PUSH, __0_intnl_returnValSymbol_Renderer
+        PUSH, __5_intnl_UnityEngineRenderer
+        COPY
+        PUSH, __5_intnl_UnityEngineRenderer
+        PUSH, normal
+        EXTERN, "UnityEngineRenderer.__set_sharedMaterial__UnityEngineMaterial__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void SetData(Vector3[] data, int index, Vector3 element)
+    SetData:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (data.Length >= index)
+        PUSH, __0_mp_data_Vector3Array
+        PUSH, __0_intnl_SystemInt32
+        EXTERN, "UnityEngineVector3Array.__get_Length__SystemInt32"
+        PUSH, __0_intnl_SystemInt32
+        PUSH, __0_mp_index_Int32
+        PUSH, __10_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __10_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000D10
+        
+         #  data[data.Length - index] = element;
+        PUSH, __0_mp_data_Vector3Array
+        PUSH, __1_intnl_SystemInt32
+        EXTERN, "UnityEngineVector3Array.__get_Length__SystemInt32"
+        PUSH, __1_intnl_SystemInt32
+        PUSH, __0_mp_index_Int32
+        PUSH, __2_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __0_mp_data_Vector3Array
+        PUSH, __2_intnl_SystemInt32
+        PUSH, __0_mp_element_Vector3
+        EXTERN, "UnityEngineVector3Array.__Set__SystemInt32_UnityEngineVector3__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private const int MODE_UNKNOWN = QvPen_Pen.MODE_UNKNOWN;
+        
+         #  private const int MODE_DRAW = QvPen_Pen.MODE_DRAW;
+        
+         #  private const int MODE_ERASE = QvPen_Pen.MODE_ERASE;
+        
+         #  private const int MODE_DRAW_PLANE = QvPen_Pen.MODE_DRAW_PLANE;
+        
+         #  private int GetFooterSize(int mode)
+    GetFooterSize:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  switch (mode)
+        PUSH, __0_mp_mode_Int32
+        PUSH, MODE_DRAW
+        PUSH, __11_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __11_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000D64
+        JUMP, 0x00000DDC
+        PUSH, __0_mp_mode_Int32
+        PUSH, MODE_ERASE
+        PUSH, __12_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __12_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000D9C
+        JUMP, 0x00000E04
+        PUSH, __0_mp_mode_Int32
+        PUSH, MODE_UNKNOWN
+        PUSH, __13_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __13_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000DD4
+        JUMP, 0x00000E2C
+        JUMP, 0x00000E54
+        
+         #  case MODE_DRAW: return 7;
+        PUSH, __4_const_intnl_SystemInt32
+        PUSH, __0_intnl_returnValSymbol_Int32
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  case MODE_ERASE: return 6;
+        PUSH, __5_const_intnl_SystemInt32
+        PUSH, __0_intnl_returnValSymbol_Int32
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  case MODE_UNKNOWN: return 0;
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __0_intnl_returnValSymbol_Int32
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  default: return 0;
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __0_intnl_returnValSymbol_Int32
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private readonly Collider[] results = new Collider[4];
+        
+         #  public override void PostLateUpdate()
+    .export _postLateUpdate
+        
+    _postLateUpdate:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (!isHeld || !isErasing || !isUser)
+        PUSH, __11_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00002A48
+        PUSH, __0_intnl_returnValSymbol_Boolean
+        PUSH, __16_intnl_SystemBoolean
+        COPY
+        PUSH, __16_intnl_SystemBoolean
+        PUSH, __17_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __17_intnl_SystemBoolean
+        PUSH, __15_intnl_SystemBoolean
+        COPY
+        PUSH, __15_intnl_SystemBoolean
+        PUSH, __18_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __18_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000F5C
+        PUSH, isErasing
+        PUSH, __19_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __15_intnl_SystemBoolean
+        PUSH, __19_intnl_SystemBoolean
+        PUSH, __20_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalOr__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __20_intnl_SystemBoolean
+        PUSH, __15_intnl_SystemBoolean
+        COPY
+        PUSH, __15_intnl_SystemBoolean
+        PUSH, __14_intnl_SystemBoolean
+        COPY
+        PUSH, __14_intnl_SystemBoolean
+        PUSH, __21_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __21_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000FE4
+        PUSH, isUser
+        PUSH, __22_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_UnaryNegation__SystemBoolean__SystemBoolean"
+        PUSH, __14_intnl_SystemBoolean
+        PUSH, __22_intnl_SystemBoolean
+        PUSH, __23_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalOr__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __23_intnl_SystemBoolean
+        PUSH, __14_intnl_SystemBoolean
+        COPY
+        PUSH, __14_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001008
+        
+         #  return;
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  var count = Physics.OverlapSphereNonAlloc(transform.position, eraserRadius, results, 1 << inkColliderLayer, QueryTriggerInteraction.Ignore);
+        PUSH, __0_this_intnl_UnityEngineTransform
+        PUSH, __1_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__get_position__UnityEngineVector3"
+        PUSH, __12_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000308
+        PUSH, __0_intnl_returnValSymbol_Single
+        PUSH, __5_intnl_SystemSingle
+        COPY
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, inkColliderLayer
+        PUSH, __3_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_LeftShift__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __1_intnl_UnityEngineVector3
+        PUSH, __5_intnl_SystemSingle
+        PUSH, results
+        PUSH, __3_intnl_SystemInt32
+        PUSH, __0_const_intnl_UnityEngineQueryTriggerInteraction
+        PUSH, __4_intnl_SystemInt32
+        EXTERN, "UnityEnginePhysics.__OverlapSphereNonAlloc__UnityEngineVector3_SystemSingle_UnityEngineColliderArray_SystemInt32_UnityEngineQueryTriggerInteraction__SystemInt32"
+        PUSH, __4_intnl_SystemInt32
+        PUSH, __0_count_Int32
+        COPY
+        
+         #  for (var i = 0; i < count; i++)
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __0_i_Int32
+        COPY
+        PUSH, __0_i_Int32
+        PUSH, __0_count_Int32
+        PUSH, __24_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __24_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001CA0
+        
+         #  {
+        
+         #  var other = results[i];
+        PUSH, results
+        PUSH, __0_i_Int32
+        PUSH, __0_intnl_UnityEngineCollider
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __0_intnl_UnityEngineCollider
+        PUSH, __0_other_Collider
+        COPY
+        
+         #  if (other
+        PUSH, __0_other_Collider
+        PUSH, __28_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __28_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000011CC
+        
+         #  && other.transform.parent
+        PUSH, __0_other_Collider
+        PUSH, __3_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineCollider.__get_transform__UnityEngineTransform"
+        PUSH, __3_intnl_UnityEngineTransform
+        PUSH, __4_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __4_intnl_UnityEngineTransform
+        PUSH, __29_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __28_intnl_SystemBoolean
+        PUSH, __29_intnl_SystemBoolean
+        PUSH, __30_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __30_intnl_SystemBoolean
+        PUSH, __28_intnl_SystemBoolean
+        COPY
+        PUSH, __28_intnl_SystemBoolean
+        PUSH, __27_intnl_SystemBoolean
+        COPY
+        PUSH, __27_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001284
+        
+         #  && other.transform.parent.parent
+        PUSH, __0_other_Collider
+        PUSH, __5_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineCollider.__get_transform__UnityEngineTransform"
+        PUSH, __5_intnl_UnityEngineTransform
+        PUSH, __6_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __6_intnl_UnityEngineTransform
+        PUSH, __7_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __7_intnl_UnityEngineTransform
+        PUSH, __31_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __27_intnl_SystemBoolean
+        PUSH, __31_intnl_SystemBoolean
+        PUSH, __32_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __32_intnl_SystemBoolean
+        PUSH, __27_intnl_SystemBoolean
+        COPY
+        PUSH, __27_intnl_SystemBoolean
+        PUSH, __26_intnl_SystemBoolean
+        COPY
+        PUSH, __26_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001354
+        
+         #  && other.transform.parent.parent.parent
+        PUSH, __0_other_Collider
+        PUSH, __8_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineCollider.__get_transform__UnityEngineTransform"
+        PUSH, __8_intnl_UnityEngineTransform
+        PUSH, __9_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __9_intnl_UnityEngineTransform
+        PUSH, __10_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __10_intnl_UnityEngineTransform
+        PUSH, __11_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __11_intnl_UnityEngineTransform
+        PUSH, __33_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __26_intnl_SystemBoolean
+        PUSH, __33_intnl_SystemBoolean
+        PUSH, __34_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __34_intnl_SystemBoolean
+        PUSH, __26_intnl_SystemBoolean
+        COPY
+        PUSH, __26_intnl_SystemBoolean
+        PUSH, __25_intnl_SystemBoolean
+        COPY
+        PUSH, __25_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001444
+        
+         #  && other.transform.parent.parent.parent.parent == inkPoolRoot)
+        PUSH, __0_other_Collider
+        PUSH, __12_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineCollider.__get_transform__UnityEngineTransform"
+        PUSH, __12_intnl_UnityEngineTransform
+        PUSH, __13_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __13_intnl_UnityEngineTransform
+        PUSH, __14_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __14_intnl_UnityEngineTransform
+        PUSH, __15_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __15_intnl_UnityEngineTransform
+        PUSH, __16_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __16_intnl_UnityEngineTransform
+        PUSH, inkPoolRoot
+        PUSH, __35_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __25_intnl_SystemBoolean
+        PUSH, __35_intnl_SystemBoolean
+        PUSH, __36_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __36_intnl_SystemBoolean
+        PUSH, __25_intnl_SystemBoolean
+        COPY
+        PUSH, __25_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001C44
+        
+         #  {
+        
+         #  var synchronizer = other.GetComponentInParent<QvPen_SequentialSync>();
+        PUSH, __0_other_Collider
+        PUSH, __4_const_intnl_SystemType
+        PUSH, __0_intnl_UnityEngineComponentArray
+        EXTERN, "UnityEngineComponent.__GetComponentsInParent__SystemType__UnityEngineComponentArray"
+        PUSH, __0_const_intnl_QvPenUdonScriptQvPen_SequentialSync
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_SequentialSync
+        COPY
+        PUSH, __0_intnl_UnityEngineComponentArray
+        PUSH, __5_intnl_SystemInt32
+        EXTERN, "UnityEngineComponentArray.__get_Length__SystemInt32"
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __6_intnl_SystemInt32
+        COPY
+        PUSH, __6_intnl_SystemInt32
+        PUSH, __5_intnl_SystemInt32
+        PUSH, __37_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __37_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001638
+        PUSH, __0_intnl_UnityEngineComponentArray
+        PUSH, __6_intnl_SystemInt32
+        PUSH, __2_intnl_UnityEngineComponent
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __2_intnl_UnityEngineComponent
+        PUSH, __1_intnl_QvPenUdonScriptQvPen_SequentialSync
+        COPY
+        PUSH, __1_intnl_QvPenUdonScriptQvPen_SequentialSync
+        PUSH, __20_const_intnl_SystemString
+        PUSH, __2_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __2_intnl_SystemObject
+        PUSH, __0_const_intnl_SystemObject
+        PUSH, __38_intnl_SystemBoolean
+        EXTERN, "SystemObject.__op_Inequality__SystemObject_SystemObject__SystemBoolean"
+        PUSH, __38_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000159C
+        PUSH, __2_intnl_SystemObject
+        PUSH, __1_intnl_SystemInt64
+        EXTERN, "SystemConvert.__ToInt64__SystemObject__SystemInt64"
+        PUSH, __1_intnl_SystemInt64
+        PUSH, __0_intnl_SystemInt64
+        COPY
+        JUMP, 0x000015B0
+        PUSH, __1_const_intnl_SystemInt64
+        PUSH, __0_intnl_SystemInt64
+        COPY
+        PUSH, __0_intnl_SystemInt64
+        PUSH, __0_const_intnl_SystemInt64
+        PUSH, __39_intnl_SystemBoolean
+        EXTERN, "SystemInt64.__op_Equality__SystemInt64_SystemInt64__SystemBoolean"
+        PUSH, __39_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000015FC
+        PUSH, __1_intnl_QvPenUdonScriptQvPen_SequentialSync
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_SequentialSync
+        COPY
+        JUMP, 0x00001638
+        PUSH, __6_intnl_SystemInt32
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, __7_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __7_intnl_SystemInt32
+        PUSH, __6_intnl_SystemInt32
+        COPY
+        JUMP, 0x000014B4
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_SequentialSync
+        PUSH, __0_synchronizer_QvPen_SequentialSync
+        COPY
+        
+         #  if (synchronizer)
+        PUSH, __0_synchronizer_QvPen_SequentialSync
+        PUSH, __37_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __37_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001C44
+        
+         #  {
+        
+         #  var pen = synchronizer.pen;
+        PUSH, __0_synchronizer_QvPen_SequentialSync
+        PUSH, __21_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_synchronizer_QvPen_SequentialSync
+        PUSH, __22_const_intnl_SystemString
+        PUSH, __2_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __2_intnl_SystemObject
+        PUSH, __1_intnl_QvPenUdonScriptQvPen_Pen
+        COPY
+        PUSH, __1_intnl_QvPenUdonScriptQvPen_Pen
+        PUSH, __0_pen_QvPen_Pen
+        COPY
+        
+         #  var penIdVector = pen.penIdVector;
+        PUSH, __0_pen_QvPen_Pen
+        PUSH, __23_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_pen_QvPen_Pen
+        PUSH, __24_const_intnl_SystemString
+        PUSH, __3_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __3_intnl_SystemObject
+        PUSH, __3_intnl_UnityEngineVector3
+        COPY
+        PUSH, __3_intnl_UnityEngineVector3
+        PUSH, __0_penIdVector_Vector3
+        COPY
+        
+         #  var lineRenderer = other.GetComponentInParent<LineRenderer>();
+        PUSH, __0_other_Collider
+        PUSH, __17_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __17_intnl_UnityEngineTransform
+        PUSH, __5_const_intnl_SystemType
+        PUSH, __0_intnl_UnityEngineLineRenderer
+        EXTERN, "UnityEngineLineRenderer.__GetComponentInParent__T"
+        PUSH, __0_intnl_UnityEngineLineRenderer
+        PUSH, __0_lineRenderer_LineRenderer
+        COPY
+        
+         #  if (lineRenderer && lineRenderer.positionCount > 0)
+        PUSH, __0_lineRenderer_LineRenderer
+        PUSH, __38_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __38_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001814
+        PUSH, __0_lineRenderer_LineRenderer
+        PUSH, __5_intnl_SystemInt32
+        EXTERN, "UnityEngineLineRenderer.__get_positionCount__SystemInt32"
+        PUSH, __5_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __39_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_GreaterThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __38_intnl_SystemBoolean
+        PUSH, __39_intnl_SystemBoolean
+        PUSH, __40_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __40_intnl_SystemBoolean
+        PUSH, __38_intnl_SystemBoolean
+        COPY
+        PUSH, __38_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001C44
+        
+         #  {
+        
+         #  var data = new Vector3[GetFooterSize(MODE_ERASE)];
+        PUSH, MODE_ERASE
+        PUSH, __0_mp_mode_Int32
+        COPY
+        PUSH, MODE_ERASE
+        PUSH, __6_intnl_SystemInt32
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, __13_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000D2C
+        PUSH, __0_intnl_returnValSymbol_Int32
+        PUSH, __0_intnl_UnityEngineVector3Array
+        EXTERN, "UnityEngineVector3Array.__ctor__SystemInt32__UnityEngineVector3Array"
+        PUSH, __0_intnl_UnityEngineVector3Array
+        PUSH, __0_data_Vector3Array
+        COPY
+        
+         #  SetData(data, 1, new Vector3(localPlayer.playerId, MODE_ERASE, GetFooterSize(MODE_ERASE)));
+        PUSH, __14_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x000004F4
+        PUSH, __0_intnl_returnValSymbol_VRCPlayerApi
+        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi
+        COPY
+        PUSH, __1_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __7_intnl_SystemInt32
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__get_playerId__SystemInt32"
+        PUSH, MODE_ERASE
+        PUSH, __0_mp_mode_Int32
+        COPY
+        PUSH, MODE_ERASE
+        PUSH, __8_intnl_SystemInt32
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, __15_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000D2C
+        PUSH, __7_intnl_SystemInt32
+        PUSH, __6_intnl_SystemSingle
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __8_intnl_SystemInt32
+        PUSH, __7_intnl_SystemSingle
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __0_intnl_returnValSymbol_Int32
+        PUSH, __8_intnl_SystemSingle
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __6_intnl_SystemSingle
+        PUSH, __7_intnl_SystemSingle
+        PUSH, __8_intnl_SystemSingle
+        PUSH, __0_mp_element_Vector3
+        EXTERN, "UnityEngineVector3.__ctor__SystemSingle_SystemSingle_SystemSingle__UnityEngineVector3"
+        PUSH, __0_data_Vector3Array
+        PUSH, __0_mp_data_Vector3Array
+        COPY
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, __0_mp_index_Int32
+        COPY
+        PUSH, __16_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000C70
+        
+         #  SetData(data, 2, penIdVector);
+        PUSH, __0_data_Vector3Array
+        PUSH, __0_mp_data_Vector3Array
+        COPY
+        PUSH, __3_const_intnl_SystemInt32
+        PUSH, __0_mp_index_Int32
+        COPY
+        PUSH, __0_penIdVector_Vector3
+        PUSH, __0_mp_element_Vector3
+        COPY
+        PUSH, __17_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000C70
+        
+         #  SetData(data, 3, Vector3.right * lineRenderer.positionCount);
+        PUSH, __4_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineVector3.__get_right__UnityEngineVector3"
+        PUSH, __0_lineRenderer_LineRenderer
+        PUSH, __9_intnl_SystemInt32
+        EXTERN, "UnityEngineLineRenderer.__get_positionCount__SystemInt32"
+        PUSH, __9_intnl_SystemInt32
+        PUSH, __9_intnl_SystemSingle
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __4_intnl_UnityEngineVector3
+        PUSH, __9_intnl_SystemSingle
+        PUSH, __0_mp_element_Vector3
+        EXTERN, "UnityEngineVector3.__op_Multiply__UnityEngineVector3_SystemSingle__UnityEngineVector3"
+        PUSH, __0_data_Vector3Array
+        PUSH, __0_mp_data_Vector3Array
+        COPY
+        PUSH, __6_const_intnl_SystemInt32
+        PUSH, __0_mp_index_Int32
+        COPY
+        PUSH, __18_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000C70
+        
+         #  SetData(data, 4, lineRenderer.GetPosition(0));
+        PUSH, __0_lineRenderer_LineRenderer
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __0_mp_element_Vector3
+        EXTERN, "UnityEngineLineRenderer.__GetPosition__SystemInt32__UnityEngineVector3"
+        PUSH, __0_data_Vector3Array
+        PUSH, __0_mp_data_Vector3Array
+        COPY
+        PUSH, __7_const_intnl_SystemInt32
+        PUSH, __0_mp_index_Int32
+        COPY
+        PUSH, __19_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000C70
+        
+         #  SetData(data, 5, lineRenderer.GetPosition(lineRenderer.positionCount / 2));
+        PUSH, __0_lineRenderer_LineRenderer
+        PUSH, __10_intnl_SystemInt32
+        EXTERN, "UnityEngineLineRenderer.__get_positionCount__SystemInt32"
+        PUSH, __10_intnl_SystemInt32
+        PUSH, __3_const_intnl_SystemInt32
+        PUSH, __11_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Division__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __0_lineRenderer_LineRenderer
+        PUSH, __11_intnl_SystemInt32
+        PUSH, __0_mp_element_Vector3
+        EXTERN, "UnityEngineLineRenderer.__GetPosition__SystemInt32__UnityEngineVector3"
+        PUSH, __0_data_Vector3Array
+        PUSH, __0_mp_data_Vector3Array
+        COPY
+        PUSH, __8_const_intnl_SystemInt32
+        PUSH, __0_mp_index_Int32
+        COPY
+        PUSH, __20_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000C70
+        
+         #  SetData(data, 6, lineRenderer.GetPosition(Mathf.Max(0, lineRenderer.positionCount - 1)));
+        PUSH, __0_lineRenderer_LineRenderer
+        PUSH, __12_intnl_SystemInt32
+        EXTERN, "UnityEngineLineRenderer.__get_positionCount__SystemInt32"
+        PUSH, __12_intnl_SystemInt32
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, __13_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __13_intnl_SystemInt32
+        PUSH, __14_intnl_SystemInt32
+        EXTERN, "UnityEngineMathf.__Max__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __0_lineRenderer_LineRenderer
+        PUSH, __14_intnl_SystemInt32
+        PUSH, __0_mp_element_Vector3
+        EXTERN, "UnityEngineLineRenderer.__GetPosition__SystemInt32__UnityEngineVector3"
+        PUSH, __0_data_Vector3Array
+        PUSH, __0_mp_data_Vector3Array
+        COPY
+        PUSH, __5_const_intnl_SystemInt32
+        PUSH, __0_mp_index_Int32
+        COPY
+        PUSH, __21_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000C70
+        
+         #  _SendData(data);
+        PUSH, __0_data_Vector3Array
+        PUSH, __3_mp_data_Vector3Array
+        COPY
+        PUSH, __22_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00001EE0
+        
+         #  results[i] = null;
+        PUSH, results
+        PUSH, __0_i_Int32
+        PUSH, __0_const_intnl_SystemObject
+        EXTERN, "SystemObjectArray.__Set__SystemInt32_SystemObject__SystemVoid"
+        PUSH, __0_i_Int32
+        PUSH, __5_intnl_SystemInt32
+        COPY
+        PUSH, __5_intnl_SystemInt32
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, __0_i_Int32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x000010C4
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private Vector3 GetData(Vector3[] data, int index)
+    GetData:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  => data.Length >= index ? data[data.Length - index] : Vector3.negativeInfinity;
+        PUSH, __1_mp_data_Vector3Array
+        PUSH, __15_intnl_SystemInt32
+        EXTERN, "UnityEngineVector3Array.__get_Length__SystemInt32"
+        PUSH, __15_intnl_SystemInt32
+        PUSH, __1_mp_index_Int32
+        PUSH, __41_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __41_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001D78
+        PUSH, __1_mp_data_Vector3Array
+        PUSH, __16_intnl_SystemInt32
+        EXTERN, "UnityEngineVector3Array.__get_Length__SystemInt32"
+        PUSH, __16_intnl_SystemInt32
+        PUSH, __1_mp_index_Int32
+        PUSH, __17_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __1_mp_data_Vector3Array
+        PUSH, __17_intnl_SystemInt32
+        PUSH, __6_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineVector3Array.__Get__SystemInt32__UnityEngineVector3"
+        PUSH, __6_intnl_UnityEngineVector3
+        PUSH, __5_intnl_UnityEngineVector3
+        COPY
+        JUMP, 0x00001D88
+        PUSH, __5_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineVector3.__get_negativeInfinity__UnityEngineVector3"
+        PUSH, __5_intnl_UnityEngineVector3
+        PUSH, __0_intnl_returnValSymbol_Vector3
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private int GetMode(Vector3[] data) => data.Length >= 1 ? (int)GetData(data, 1).y : MODE_UNKNOWN;
+    GetMode:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, __2_mp_data_Vector3Array
+        PUSH, __18_intnl_SystemInt32
+        EXTERN, "UnityEngineVector3Array.__get_Length__SystemInt32"
+        PUSH, __18_intnl_SystemInt32
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, __42_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_GreaterThanOrEqual__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __42_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001E9C
+        PUSH, __2_mp_data_Vector3Array
+        PUSH, __1_mp_data_Vector3Array
+        COPY
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, __1_mp_index_Int32
+        COPY
+        PUSH, __23_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00001CBC
+        PUSH, __0_intnl_returnValSymbol_Vector3
+        PUSH, __10_intnl_SystemSingle
+        EXTERN, "UnityEngineVector3.__get_y__SystemSingle"
+        PUSH, __10_intnl_SystemSingle
+        PUSH, __11_intnl_SystemSingle
+        EXTERN, "UnityEngineMathf.__Floor__SystemSingle__SystemSingle"
+        PUSH, __11_intnl_SystemSingle
+        PUSH, __19_intnl_SystemInt32
+        EXTERN, "SystemConvert.__ToInt32__SystemSingle__SystemInt32"
+        PUSH, __19_intnl_SystemInt32
+        PUSH, __20_intnl_SystemInt32
+        COPY
+        JUMP, 0x00001EB0
+        PUSH, MODE_UNKNOWN
+        PUSH, __20_intnl_SystemInt32
+        COPY
+        PUSH, __20_intnl_SystemInt32
+        PUSH, __1_intnl_returnValSymbol_Int32
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _SendData(Vector3[] data) => manager._SendData(data);
+    .export _SendData
+        
+    _SendData:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, manager
+        PUSH, __25_const_intnl_SystemString
+        PUSH, __3_mp_data_Vector3Array
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SetProgramVariable__SystemString_SystemObject__SystemVoid"
+        PUSH, manager
+        PUSH, __26_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _UnpackData(Vector3[] data)
+    .export _UnpackData
+        
+    _UnpackData:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (data.Length == 0)
+        PUSH, __4_mp_data_Vector3Array
+        PUSH, __21_intnl_SystemInt32
+        EXTERN, "UnityEngineVector3Array.__get_Length__SystemInt32"
+        PUSH, __21_intnl_SystemInt32
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __43_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __43_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001F90
+        
+         #  return;
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  switch (GetMode(data))
+        PUSH, __4_mp_data_Vector3Array
+        PUSH, __2_mp_data_Vector3Array
+        COPY
+        PUSH, __24_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00001DB8
+        PUSH, __1_intnl_returnValSymbol_Int32
+        PUSH, MODE_ERASE
+        PUSH, __44_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __44_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00001FEC
+        JUMP, 0x00001FF4
+        JUMP, 0x00002020
+        
+         #  {
+        
+         #  EraseInk(data);
+        PUSH, __4_mp_data_Vector3Array
+        PUSH, __5_mp_data_Vector3Array
+        COPY
+        PUSH, __25_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x0000203C
+        
+         #  break;
+        JUMP, 0x00002020
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void EraseInk(Vector3[] data)
+    EraseInk:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (data.Length < GetFooterSize(MODE_ERASE))
+        PUSH, __5_mp_data_Vector3Array
+        PUSH, __22_intnl_SystemInt32
+        EXTERN, "UnityEngineVector3Array.__get_Length__SystemInt32"
+        PUSH, MODE_ERASE
+        PUSH, __0_mp_mode_Int32
+        COPY
+        PUSH, MODE_ERASE
+        PUSH, __23_intnl_SystemInt32
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, __26_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000D2C
+        PUSH, __22_intnl_SystemInt32
+        PUSH, __0_intnl_returnValSymbol_Int32
+        PUSH, __45_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __45_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000020D0
+        
+         #  return;
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+         #  const float eraserMiniRadius = 0.18e-4f;
+        PUSH, __1_const_intnl_SystemSingle
+        PUSH, __0_eraserMiniRadius_Single
+        COPY
+        
+         #  var middlePosition = GetData(data, 5);
+        PUSH, __5_mp_data_Vector3Array
+        PUSH, __1_mp_data_Vector3Array
+        COPY
+        PUSH, __8_const_intnl_SystemInt32
+        PUSH, __1_mp_index_Int32
+        COPY
+        PUSH, __27_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00001CBC
+        PUSH, __0_intnl_returnValSymbol_Vector3
+        PUSH, __0_middlePosition_Vector3
+        COPY
+        
+         #  var count = Physics.OverlapSphereNonAlloc(middlePosition, eraserMiniRadius, results, 1 << inkColliderLayer, QueryTriggerInteraction.Ignore);
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, inkColliderLayer
+        PUSH, __24_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_LeftShift__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __0_middlePosition_Vector3
+        PUSH, __0_eraserMiniRadius_Single
+        PUSH, results
+        PUSH, __24_intnl_SystemInt32
+        PUSH, __0_const_intnl_UnityEngineQueryTriggerInteraction
+        PUSH, __25_intnl_SystemInt32
+        EXTERN, "UnityEnginePhysics.__OverlapSphereNonAlloc__UnityEngineVector3_SystemSingle_UnityEngineColliderArray_SystemInt32_UnityEngineQueryTriggerInteraction__SystemInt32"
+        PUSH, __25_intnl_SystemInt32
+        PUSH, __1_count_Int32
+        COPY
+        
+         #  for (var i = 0; i < count; i++)
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __1_i_Int32
+        COPY
+        PUSH, __1_i_Int32
+        PUSH, __1_count_Int32
+        PUSH, __46_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __46_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002A2C
+        
+         #  {
+        
+         #  var other = results[i];
+        PUSH, results
+        PUSH, __1_i_Int32
+        PUSH, __1_intnl_UnityEngineCollider
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __1_intnl_UnityEngineCollider
+        PUSH, __1_other_Collider
+        COPY
+        
+         #  if (other
+        PUSH, __1_other_Collider
+        PUSH, __50_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __50_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000022B8
+        
+         #  && other.transform.parent
+        PUSH, __1_other_Collider
+        PUSH, __18_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineCollider.__get_transform__UnityEngineTransform"
+        PUSH, __18_intnl_UnityEngineTransform
+        PUSH, __19_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __19_intnl_UnityEngineTransform
+        PUSH, __51_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __50_intnl_SystemBoolean
+        PUSH, __51_intnl_SystemBoolean
+        PUSH, __52_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __52_intnl_SystemBoolean
+        PUSH, __50_intnl_SystemBoolean
+        COPY
+        PUSH, __50_intnl_SystemBoolean
+        PUSH, __49_intnl_SystemBoolean
+        COPY
+        PUSH, __49_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002370
+        
+         #  && other.transform.parent.parent
+        PUSH, __1_other_Collider
+        PUSH, __20_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineCollider.__get_transform__UnityEngineTransform"
+        PUSH, __20_intnl_UnityEngineTransform
+        PUSH, __21_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __21_intnl_UnityEngineTransform
+        PUSH, __22_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __22_intnl_UnityEngineTransform
+        PUSH, __53_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __49_intnl_SystemBoolean
+        PUSH, __53_intnl_SystemBoolean
+        PUSH, __54_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __54_intnl_SystemBoolean
+        PUSH, __49_intnl_SystemBoolean
+        COPY
+        PUSH, __49_intnl_SystemBoolean
+        PUSH, __48_intnl_SystemBoolean
+        COPY
+        PUSH, __48_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002440
+        
+         #  && other.transform.parent.parent.parent
+        PUSH, __1_other_Collider
+        PUSH, __23_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineCollider.__get_transform__UnityEngineTransform"
+        PUSH, __23_intnl_UnityEngineTransform
+        PUSH, __24_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __24_intnl_UnityEngineTransform
+        PUSH, __25_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __25_intnl_UnityEngineTransform
+        PUSH, __26_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __26_intnl_UnityEngineTransform
+        PUSH, __55_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __48_intnl_SystemBoolean
+        PUSH, __55_intnl_SystemBoolean
+        PUSH, __56_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __56_intnl_SystemBoolean
+        PUSH, __48_intnl_SystemBoolean
+        COPY
+        PUSH, __48_intnl_SystemBoolean
+        PUSH, __47_intnl_SystemBoolean
+        COPY
+        PUSH, __47_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002530
+        
+         #  && other.transform.parent.parent.parent.parent == inkPoolRoot
+        PUSH, __1_other_Collider
+        PUSH, __27_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineCollider.__get_transform__UnityEngineTransform"
+        PUSH, __27_intnl_UnityEngineTransform
+        PUSH, __28_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __28_intnl_UnityEngineTransform
+        PUSH, __29_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __29_intnl_UnityEngineTransform
+        PUSH, __30_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __30_intnl_UnityEngineTransform
+        PUSH, __31_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __31_intnl_UnityEngineTransform
+        PUSH, inkPoolRoot
+        PUSH, __57_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Equality__UnityEngineObject_UnityEngineObject__SystemBoolean"
+        PUSH, __47_intnl_SystemBoolean
+        PUSH, __57_intnl_SystemBoolean
+        PUSH, __58_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __58_intnl_SystemBoolean
+        PUSH, __47_intnl_SystemBoolean
+        COPY
+        PUSH, __47_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000029D0
+        
+         #  {
+        
+         #  var lineRenderer = other.GetComponentInParent<LineRenderer>();
+        PUSH, __1_other_Collider
+        PUSH, __32_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineComponent.__get_transform__UnityEngineTransform" # GetComponent strongbox mismatch fix
+        PUSH, __32_intnl_UnityEngineTransform
+        PUSH, __5_const_intnl_SystemType
+        PUSH, __1_intnl_UnityEngineLineRenderer
+        EXTERN, "UnityEngineLineRenderer.__GetComponentInParent__T"
+        PUSH, __1_intnl_UnityEngineLineRenderer
+        PUSH, __1_lineRenderer_LineRenderer
+        COPY
+        
+         #  if (lineRenderer
+        PUSH, __1_lineRenderer_LineRenderer
+        PUSH, __62_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __62_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000026A0
+        
+         #  && lineRenderer.positionCount == (int)GetData(data, 3).x
+        PUSH, __1_lineRenderer_LineRenderer
+        PUSH, __26_intnl_SystemInt32
+        EXTERN, "UnityEngineLineRenderer.__get_positionCount__SystemInt32"
+        PUSH, __5_mp_data_Vector3Array
+        PUSH, __1_mp_data_Vector3Array
+        COPY
+        PUSH, __6_const_intnl_SystemInt32
+        PUSH, __1_mp_index_Int32
+        COPY
+        PUSH, __28_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00001CBC
+        PUSH, __0_intnl_returnValSymbol_Vector3
+        PUSH, __12_intnl_SystemSingle
+        EXTERN, "UnityEngineVector3.__get_x__SystemSingle"
+        PUSH, __12_intnl_SystemSingle
+        PUSH, __13_intnl_SystemSingle
+        EXTERN, "UnityEngineMathf.__Floor__SystemSingle__SystemSingle"
+        PUSH, __13_intnl_SystemSingle
+        PUSH, __27_intnl_SystemInt32
+        EXTERN, "SystemConvert.__ToInt32__SystemSingle__SystemInt32"
+        PUSH, __26_intnl_SystemInt32
+        PUSH, __27_intnl_SystemInt32
+        PUSH, __63_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_Equality__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __62_intnl_SystemBoolean
+        PUSH, __63_intnl_SystemBoolean
+        PUSH, __64_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __64_intnl_SystemBoolean
+        PUSH, __62_intnl_SystemBoolean
+        COPY
+        PUSH, __62_intnl_SystemBoolean
+        PUSH, __61_intnl_SystemBoolean
+        COPY
+        PUSH, __61_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002770
+        
+         #  && lineRenderer.GetPosition(0) == GetData(data, 4)
+        PUSH, __1_lineRenderer_LineRenderer
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __7_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineLineRenderer.__GetPosition__SystemInt32__UnityEngineVector3"
+        PUSH, __5_mp_data_Vector3Array
+        PUSH, __1_mp_data_Vector3Array
+        COPY
+        PUSH, __7_const_intnl_SystemInt32
+        PUSH, __1_mp_index_Int32
+        COPY
+        PUSH, __29_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00001CBC
+        PUSH, __7_intnl_UnityEngineVector3
+        PUSH, __0_intnl_returnValSymbol_Vector3
+        PUSH, __65_intnl_SystemBoolean
+        EXTERN, "UnityEngineVector3.__op_Equality__UnityEngineVector3_UnityEngineVector3__SystemBoolean"
+        PUSH, __61_intnl_SystemBoolean
+        PUSH, __65_intnl_SystemBoolean
+        PUSH, __66_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __66_intnl_SystemBoolean
+        PUSH, __61_intnl_SystemBoolean
+        COPY
+        PUSH, __61_intnl_SystemBoolean
+        PUSH, __60_intnl_SystemBoolean
+        COPY
+        PUSH, __60_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002840
+        
+         #  && lineRenderer.GetPosition(lineRenderer.positionCount / 2) == middlePosition
+        PUSH, __1_lineRenderer_LineRenderer
+        PUSH, __28_intnl_SystemInt32
+        EXTERN, "UnityEngineLineRenderer.__get_positionCount__SystemInt32"
+        PUSH, __28_intnl_SystemInt32
+        PUSH, __3_const_intnl_SystemInt32
+        PUSH, __29_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Division__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __1_lineRenderer_LineRenderer
+        PUSH, __29_intnl_SystemInt32
+        PUSH, __8_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineLineRenderer.__GetPosition__SystemInt32__UnityEngineVector3"
+        PUSH, __8_intnl_UnityEngineVector3
+        PUSH, __0_middlePosition_Vector3
+        PUSH, __67_intnl_SystemBoolean
+        EXTERN, "UnityEngineVector3.__op_Equality__UnityEngineVector3_UnityEngineVector3__SystemBoolean"
+        PUSH, __60_intnl_SystemBoolean
+        PUSH, __67_intnl_SystemBoolean
+        PUSH, __68_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __68_intnl_SystemBoolean
+        PUSH, __60_intnl_SystemBoolean
+        COPY
+        PUSH, __60_intnl_SystemBoolean
+        PUSH, __59_intnl_SystemBoolean
+        COPY
+        PUSH, __59_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002968
+        
+         #  && lineRenderer.GetPosition(Mathf.Max(0, lineRenderer.positionCount - 1)) == GetData(data, 6)
+        PUSH, __1_lineRenderer_LineRenderer
+        PUSH, __30_intnl_SystemInt32
+        EXTERN, "UnityEngineLineRenderer.__get_positionCount__SystemInt32"
+        PUSH, __30_intnl_SystemInt32
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, __31_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Subtraction__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __31_intnl_SystemInt32
+        PUSH, __32_intnl_SystemInt32
+        EXTERN, "UnityEngineMathf.__Max__SystemInt32_SystemInt32__SystemInt32"
+        PUSH, __1_lineRenderer_LineRenderer
+        PUSH, __32_intnl_SystemInt32
+        PUSH, __9_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineLineRenderer.__GetPosition__SystemInt32__UnityEngineVector3"
+        PUSH, __5_mp_data_Vector3Array
+        PUSH, __1_mp_data_Vector3Array
+        COPY
+        PUSH, __5_const_intnl_SystemInt32
+        PUSH, __1_mp_index_Int32
+        COPY
+        PUSH, __30_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00001CBC
+        PUSH, __9_intnl_UnityEngineVector3
+        PUSH, __0_intnl_returnValSymbol_Vector3
+        PUSH, __69_intnl_SystemBoolean
+        EXTERN, "UnityEngineVector3.__op_Equality__UnityEngineVector3_UnityEngineVector3__SystemBoolean"
+        PUSH, __59_intnl_SystemBoolean
+        PUSH, __69_intnl_SystemBoolean
+        PUSH, __70_intnl_SystemBoolean
+        EXTERN, "SystemBoolean.__op_ConditionalAnd__SystemBoolean_SystemBoolean__SystemBoolean"
+        PUSH, __70_intnl_SystemBoolean
+        PUSH, __59_intnl_SystemBoolean
+        COPY
+        PUSH, __59_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x000029D0
+        
+         #  Destroy(other.transform.parent.gameObject);
+        PUSH, __1_other_Collider
+        PUSH, __33_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineCollider.__get_transform__UnityEngineTransform"
+        PUSH, __33_intnl_UnityEngineTransform
+        PUSH, __34_intnl_UnityEngineTransform
+        EXTERN, "UnityEngineTransform.__get_parent__UnityEngineTransform"
+        PUSH, __34_intnl_UnityEngineTransform
+        PUSH, __1_intnl_UnityEngineGameObject
+        EXTERN, "UnityEngineTransform.__get_gameObject__UnityEngineGameObject"
+        PUSH, __1_intnl_UnityEngineGameObject
+        EXTERN, "UnityEngineObject.__Destroy__UnityEngineObject__SystemVoid"
+        
+         #  results[i] = null;
+        PUSH, results
+        PUSH, __1_i_Int32
+        PUSH, __0_const_intnl_SystemObject
+        EXTERN, "SystemObjectArray.__Set__SystemInt32_SystemObject__SystemVoid"
+        PUSH, __1_i_Int32
+        PUSH, __26_intnl_SystemInt32
+        COPY
+        PUSH, __26_intnl_SystemInt32
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, __1_i_Int32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x000021B0
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public bool isHeld => pickup.IsHeld;
+    .export _get_isHeld
+        
+    _get_isHeld:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, __31_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000190
+        PUSH, __0_intnl_returnValSymbol_VRC_Pickup
+        PUSH, __3_intnl_VRCSDK3ComponentsVRCPickup
+        COPY
+        PUSH, __3_intnl_VRCSDK3ComponentsVRCPickup
+        PUSH, __71_intnl_SystemBoolean
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__get_IsHeld__SystemBoolean"
+        PUSH, __71_intnl_SystemBoolean
+        PUSH, __0_intnl_returnValSymbol_Boolean
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Property epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  public void _Respawn()
+    .export _Respawn
+        
+    _Respawn:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  pickup.Drop();
+        PUSH, __32_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00000190
+        PUSH, __0_intnl_returnValSymbol_VRC_Pickup
+        PUSH, __4_intnl_VRCSDK3ComponentsVRCPickup
+        COPY
+        PUSH, __4_intnl_VRCSDK3ComponentsVRCPickup
+        EXTERN, "VRCSDK3ComponentsVRCPickup.__Drop__SystemVoid"
+        
+         #  if (Networking.LocalPlayer.IsOwner(gameObject))
+        PUSH, __2_intnl_VRCSDKBaseVRCPlayerApi
+        EXTERN, "VRCSDKBaseNetworking.__get_LocalPlayer__VRCSDKBaseVRCPlayerApi"
+        PUSH, __2_intnl_VRCSDKBaseVRCPlayerApi
+        PUSH, __0_this_intnl_UnityEngineGameObject
+        PUSH, __72_intnl_SystemBoolean
+        EXTERN, "VRCSDKBaseVRCPlayerApi.__IsOwner__UnityEngineGameObject__SystemBoolean"
+        PUSH, __72_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002B5C
+        
+         #  objectSync.Respawn();
+        PUSH, __33_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x0000024C
+        PUSH, __0_intnl_returnValSymbol_VRCObjectSync
+        PUSH, __1_intnl_VRCSDK3ComponentsVRCObjectSync
+        COPY
+        PUSH, __1_intnl_VRCSDK3ComponentsVRCObjectSync
+        EXTERN, "VRCSDK3ComponentsVRCObjectSync.__Respawn__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void SetParentAndResetLocalTransform(Transform child, Transform parent)
+    SetParentAndResetLocalTransform:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  if (child)
+        PUSH, __0_mp_child_Transform
+        PUSH, __73_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __73_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00002C30
+        
+         #  {
+        
+         #  child.SetParent(parent);
+        PUSH, __0_mp_child_Transform
+        PUSH, __0_mp_parent_Transform
+        EXTERN, "UnityEngineTransform.__SetParent__UnityEngineTransform__SystemVoid"
+        
+         #  child.localPosition = Vector3.zero;
+        PUSH, __10_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineVector3.__get_zero__UnityEngineVector3"
+        PUSH, __0_mp_child_Transform
+        PUSH, __10_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__set_localPosition__UnityEngineVector3__SystemVoid"
+        
+         #  child.localRotation = Quaternion.identity;
+        PUSH, __0_intnl_UnityEngineQuaternion
+        EXTERN, "UnityEngineQuaternion.__get_identity__UnityEngineQuaternion"
+        PUSH, __0_mp_child_Transform
+        PUSH, __0_intnl_UnityEngineQuaternion
+        EXTERN, "UnityEngineTransform.__set_localRotation__UnityEngineQuaternion__SystemVoid"
+        
+         #  child.localScale = Vector3.one;
+        PUSH, __11_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineVector3.__get_one__UnityEngineVector3"
+        PUSH, __0_mp_child_Transform
+        PUSH, __11_intnl_UnityEngineVector3
+        EXTERN, "UnityEngineTransform.__set_localScale__UnityEngineVector3__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void Log(object o) => Debug.Log($"{logPrefix}{o}", this);
+    Log:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, __34_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00002F44
+        PUSH, __2_intnl_returnValSymbol_String
+        PUSH, __1_intnl_SystemString
+        COPY
+        PUSH, __1_intnl_SystemString
+        PUSH, __1_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_mp_o_Object
+        PUSH, __2_intnl_SystemString
+        EXTERN, "SystemObject.__ToString__SystemString"
+        PUSH, __1_intnl_interpolatedStr_String
+        PUSH, __2_intnl_SystemString
+        PUSH, __3_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __3_intnl_SystemString
+        PUSH, __1_intnl_interpolatedStr_String
+        COPY
+        PUSH, __1_intnl_interpolatedStr_String
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_Eraser
+        EXTERN, "UnityEngineDebug.__Log__SystemObject_UnityEngineObject__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void Warning(object o) => Debug.LogWarning($"{logPrefix}{o}", this);
+    Warning:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, __35_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00002F44
+        PUSH, __2_intnl_returnValSymbol_String
+        PUSH, __4_intnl_SystemString
+        COPY
+        PUSH, __4_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, __1_mp_o_Object
+        PUSH, __5_intnl_SystemString
+        EXTERN, "SystemObject.__ToString__SystemString"
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __5_intnl_SystemString
+        PUSH, __6_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __6_intnl_SystemString
+        PUSH, __2_intnl_interpolatedStr_String
+        COPY
+        PUSH, __2_intnl_interpolatedStr_String
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_Eraser
+        EXTERN, "UnityEngineDebug.__LogWarning__SystemObject_UnityEngineObject__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private void Error(object o) => Debug.LogError($"{logPrefix}{o}", this);
+    Error:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, __36_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00002F44
+        PUSH, __2_intnl_returnValSymbol_String
+        PUSH, __7_intnl_SystemString
+        COPY
+        PUSH, __7_intnl_SystemString
+        PUSH, __3_intnl_interpolatedStr_String
+        COPY
+        PUSH, __2_mp_o_Object
+        PUSH, __8_intnl_SystemString
+        EXTERN, "SystemObject.__ToString__SystemString"
+        PUSH, __3_intnl_interpolatedStr_String
+        PUSH, __8_intnl_SystemString
+        PUSH, __9_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __9_intnl_SystemString
+        PUSH, __3_intnl_interpolatedStr_String
+        COPY
+        PUSH, __3_intnl_interpolatedStr_String
+        PUSH, __0_this_intnl_QvPenUdonScriptQvPen_Eraser
+        EXTERN, "UnityEngineDebug.__LogError__SystemObject_UnityEngineObject__SystemVoid"
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private readonly Color logColor = new Color(0xf2, 0x7d, 0x4a, 0xff) / 0xff;
+        
+         #  private string ColorBeginTag(Color c) => $"<color=\"#{ToHtmlStringRGB(c)}\">";
+    ColorBeginTag:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        PUSH, __27_const_intnl_SystemString
+        PUSH, __4_intnl_interpolatedStr_String
+        COPY
+        PUSH, __0_mp_c_Color
+        PUSH, __1_mp_c_Color
+        COPY
+        PUSH, __37_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x000031CC
+        PUSH, __4_intnl_interpolatedStr_String
+        PUSH, __1_intnl_returnValSymbol_String
+        PUSH, __10_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __10_intnl_SystemString
+        PUSH, __4_intnl_interpolatedStr_String
+        COPY
+        PUSH, __4_intnl_interpolatedStr_String
+        PUSH, __28_const_intnl_SystemString
+        PUSH, __11_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __11_intnl_SystemString
+        PUSH, __4_intnl_interpolatedStr_String
+        COPY
+        PUSH, __4_intnl_interpolatedStr_String
+        PUSH, __0_intnl_returnValSymbol_String
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private const string ColorEndTag = "</color>";
+        
+         #  [FieldChangeCallback(nameof(logPrefix))]
+        
+         #  private string logPrefix
+    .export _get_logPrefix
+        
+    _get_logPrefix:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  => string.IsNullOrEmpty(_logPrefix)
+        PUSH, _logPrefix
+        PUSH, __74_intnl_SystemBoolean
+        EXTERN, "SystemString.__IsNullOrEmpty__SystemString__SystemBoolean"
+        PUSH, __74_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00003188
+        
+         #  ? (_logPrefix = $"[{ColorBeginTag(logColor)}{nameof(QvPen)}.{nameof(QvPen.Udon)}.{nameof(QvPen_Eraser)}{ColorEndTag}] ") : _logPrefix;
+        PUSH, __29_const_intnl_SystemString
+        PUSH, __5_intnl_interpolatedStr_String
+        COPY
+        PUSH, logColor
+        PUSH, __0_mp_c_Color
+        COPY
+        PUSH, logColor
+        PUSH, __0_intnl_UnityEngineColor
+        COPY #  Copy-on-write symbol value dirtied
+        PUSH, __38_const_intnl_exitJumpLoc_UInt32
+        JUMP, 0x00002E74
+        PUSH, __5_intnl_interpolatedStr_String
+        PUSH, __0_intnl_returnValSymbol_String
+        PUSH, __12_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __12_intnl_SystemString
+        PUSH, __5_intnl_interpolatedStr_String
+        COPY
+        PUSH, __5_intnl_interpolatedStr_String
+        PUSH, __30_const_intnl_SystemString
+        PUSH, __13_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __13_intnl_SystemString
+        PUSH, __5_intnl_interpolatedStr_String
+        COPY
+        PUSH, __5_intnl_interpolatedStr_String
+        PUSH, __31_const_intnl_SystemString
+        PUSH, __14_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __14_intnl_SystemString
+        PUSH, __5_intnl_interpolatedStr_String
+        COPY
+        PUSH, __5_intnl_interpolatedStr_String
+        PUSH, __32_const_intnl_SystemString
+        PUSH, __15_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __15_intnl_SystemString
+        PUSH, __5_intnl_interpolatedStr_String
+        COPY
+        PUSH, __5_intnl_interpolatedStr_String
+        PUSH, __31_const_intnl_SystemString
+        PUSH, __16_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __16_intnl_SystemString
+        PUSH, __5_intnl_interpolatedStr_String
+        COPY
+        PUSH, __5_intnl_interpolatedStr_String
+        PUSH, __refl_const_intnl_udonTypeName
+        PUSH, __17_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __17_intnl_SystemString
+        PUSH, __5_intnl_interpolatedStr_String
+        COPY
+        PUSH, __5_intnl_interpolatedStr_String
+        PUSH, ColorEndTag
+        PUSH, __18_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __18_intnl_SystemString
+        PUSH, __5_intnl_interpolatedStr_String
+        COPY
+        PUSH, __5_intnl_interpolatedStr_String
+        PUSH, __33_const_intnl_SystemString
+        PUSH, __19_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __19_intnl_SystemString
+        PUSH, __5_intnl_interpolatedStr_String
+        COPY
+        PUSH, __5_intnl_interpolatedStr_String
+        PUSH, _logPrefix
+        COPY
+        PUSH, _logPrefix
+        PUSH, __20_intnl_SystemString
+        COPY
+        JUMP, 0x0000319C
+        PUSH, _logPrefix
+        PUSH, __20_intnl_SystemString
+        COPY
+        PUSH, __20_intnl_SystemString
+        PUSH, __2_intnl_returnValSymbol_String
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Property epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+        
+         #  private string ToHtmlStringRGB(Color c)
+    ToHtmlStringRGB:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  c *= 0xff;
+        PUSH, __9_const_intnl_SystemInt32
+        PUSH, __14_intnl_SystemSingle
+        EXTERN, "SystemConvert.__ToSingle__SystemInt32__SystemSingle"
+        PUSH, __1_mp_c_Color
+        PUSH, __14_intnl_SystemSingle
+        PUSH, __1_intnl_UnityEngineColor
+        EXTERN, "UnityEngineColor.__op_Multiply__UnityEngineColor_SystemSingle__UnityEngineColor"
+        PUSH, __1_intnl_UnityEngineColor
+        PUSH, __1_mp_c_Color
+        COPY
+        
+         #  return $"{Mathf.RoundToInt(c.r):x2}{Mathf.RoundToInt(c.g):x2}{Mathf.RoundToInt(c.b):x2}";
+        PUSH, __1_mp_c_Color
+        PUSH, __15_intnl_SystemSingle
+        EXTERN, "UnityEngineColor.__get_r__SystemSingle"
+        PUSH, __15_intnl_SystemSingle
+        PUSH, __33_intnl_SystemInt32
+        EXTERN, "UnityEngineMathf.__RoundToInt__SystemSingle__SystemInt32"
+        PUSH, __34_const_intnl_SystemString
+        PUSH, __33_intnl_SystemInt32
+        PUSH, __21_intnl_SystemString
+        EXTERN, "SystemString.__Format__SystemString_SystemObject__SystemString"
+        PUSH, __21_intnl_SystemString
+        PUSH, __6_intnl_interpolatedStr_String
+        COPY
+        PUSH, __1_mp_c_Color
+        PUSH, __16_intnl_SystemSingle
+        EXTERN, "UnityEngineColor.__get_g__SystemSingle"
+        PUSH, __16_intnl_SystemSingle
+        PUSH, __34_intnl_SystemInt32
+        EXTERN, "UnityEngineMathf.__RoundToInt__SystemSingle__SystemInt32"
+        PUSH, __34_const_intnl_SystemString
+        PUSH, __34_intnl_SystemInt32
+        PUSH, __22_intnl_SystemString
+        EXTERN, "SystemString.__Format__SystemString_SystemObject__SystemString"
+        PUSH, __6_intnl_interpolatedStr_String
+        PUSH, __22_intnl_SystemString
+        PUSH, __23_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __23_intnl_SystemString
+        PUSH, __6_intnl_interpolatedStr_String
+        COPY
+        PUSH, __1_mp_c_Color
+        PUSH, __17_intnl_SystemSingle
+        EXTERN, "UnityEngineColor.__get_b__SystemSingle"
+        PUSH, __17_intnl_SystemSingle
+        PUSH, __35_intnl_SystemInt32
+        EXTERN, "UnityEngineMathf.__RoundToInt__SystemSingle__SystemInt32"
+        PUSH, __34_const_intnl_SystemString
+        PUSH, __35_intnl_SystemInt32
+        PUSH, __24_intnl_SystemString
+        EXTERN, "SystemString.__Format__SystemString_SystemObject__SystemString"
+        PUSH, __6_intnl_interpolatedStr_String
+        PUSH, __24_intnl_SystemString
+        PUSH, __25_intnl_SystemString
+        EXTERN, "SystemString.__op_Addition__SystemString_SystemString__SystemString"
+        PUSH, __25_intnl_SystemString
+        PUSH, __6_intnl_interpolatedStr_String
+        COPY
+        PUSH, __6_intnl_interpolatedStr_String
+        PUSH, __1_intnl_returnValSymbol_String
+        COPY
+        PUSH, __0_intnl_returnTarget_UInt32 # Explicit return sequence
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+.code_end

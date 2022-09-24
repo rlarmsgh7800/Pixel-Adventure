@@ -1,0 +1,101 @@
+.data_start
+
+    .export settings
+
+    __refl_const_intnl_udonTypeID: %SystemInt64, null
+    __refl_const_intnl_udonTypeName: %SystemString, null
+    settings: %VRCUdonUdonBehaviour, null
+    __0_penManager_QvPen_PenManager: %VRCUdonUdonBehaviour, null
+    __2_const_intnl_SystemInt32: %SystemInt32, null
+    __1_const_intnl_SystemInt32: %SystemInt32, null
+    __0_const_intnl_SystemInt32: %SystemInt32, null
+    __1_const_intnl_SystemString: %SystemString, null
+    __0_const_intnl_SystemString: %SystemString, null
+    __0_const_intnl_SystemUInt32: %SystemUInt32, null
+    __1_intnl_SystemBoolean: %SystemBoolean, null
+    __0_intnl_SystemBoolean: %SystemBoolean, null
+    __0_intnl_QvPenUdonScriptQvPen_PenManagerArray: %UnityEngineComponentArray, null
+    __0_intnl_UnityEngineComponentArray: %UnityEngineComponentArray, null
+    __1_intnl_SystemInt32: %SystemInt32, null
+    __0_intnl_SystemInt32: %SystemInt32, null
+    __0_intnl_SystemObject: %SystemObject, null
+    __0_intnl_QvPenUdonScriptQvPen_PenManager: %VRCUdonUdonBehaviour, null
+    __0_intnl_returnTarget_UInt32: %SystemUInt32, null
+
+.data_end
+
+        
+         #  using UdonSharp;
+        
+         #  using UnityEngine;
+        
+         #  namespace QvPen.UdonScript.UI
+        
+         #  [DefaultExecutionOrder(30)]
+        
+         #  [UdonBehaviourSyncMode(BehaviourSyncMode.NoVariableSync)]
+        
+         #  public class QvPen_ClearAllButton : UdonSharpBehaviour
+.code_start
+.update_order 30
+        
+         #  [SerializeField]
+        
+         #  public override void Interact()
+    .export _interact
+        
+    _interact:
+        
+        PUSH, __0_const_intnl_SystemUInt32
+        
+         #  {
+        
+         #  foreach (var penManager in settings.penManagers)
+        PUSH, settings
+        PUSH, __0_const_intnl_SystemString
+        PUSH, __0_intnl_SystemObject
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__GetProgramVariable__SystemString__SystemObject"
+        PUSH, __0_intnl_SystemObject
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_PenManagerArray
+        COPY
+        PUSH, __1_const_intnl_SystemInt32
+        PUSH, __0_intnl_SystemInt32
+        COPY
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_PenManagerArray
+        PUSH, __1_intnl_SystemInt32
+        EXTERN, "UnityEngineComponentArray.__get_Length__SystemInt32"
+        PUSH, __0_intnl_SystemInt32
+        PUSH, __1_intnl_SystemInt32
+        PUSH, __0_intnl_SystemBoolean
+        EXTERN, "SystemInt32.__op_LessThan__SystemInt32_SystemInt32__SystemBoolean"
+        PUSH, __0_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x00000134
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_PenManagerArray
+        PUSH, __0_intnl_SystemInt32
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_PenManager
+        EXTERN, "SystemObjectArray.__Get__SystemInt32__SystemObject"
+        PUSH, __0_intnl_QvPenUdonScriptQvPen_PenManager
+        PUSH, __0_penManager_QvPen_PenManager
+        COPY
+        
+         #  if (penManager)
+        PUSH, __0_penManager_QvPen_PenManager
+        PUSH, __1_intnl_SystemBoolean
+        EXTERN, "UnityEngineObject.__op_Implicit__UnityEngineObject__SystemBoolean"
+        PUSH, __1_intnl_SystemBoolean
+        JUMP_IF_FALSE, 0x0000010C
+        
+         #  penManager.Clear();
+        PUSH, __0_penManager_QvPen_PenManager
+        PUSH, __1_const_intnl_SystemString
+        EXTERN, "VRCUdonCommonInterfacesIUdonEventReceiver.__SendCustomEvent__SystemString__SystemVoid"
+        PUSH, __0_intnl_SystemInt32
+        PUSH, __2_const_intnl_SystemInt32
+        PUSH, __0_intnl_SystemInt32
+        EXTERN, "SystemInt32.__op_Addition__SystemInt32_SystemInt32__SystemInt32"
+        JUMP, 0x00000068
+        PUSH, __0_intnl_returnTarget_UInt32 # Function epilogue
+        COPY
+        JUMP_INDIRECT, __0_intnl_returnTarget_UInt32
+        
+.code_end
